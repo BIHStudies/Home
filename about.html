@@ -12,26 +12,20 @@
   <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="site-title"><a href="index.html">BIHStudies</a></h1>
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="education.html">Education</a>
-      <a href="research.html">Research</a>
-      <a href="resources.html">Resources</a>
-      <a href="blog.html">Blog</a>
-      <a href="donate.html">Donate</a>
-    </nav>
-  </header>
+  <!-- shared header gets injected -->
+  <div id="header"></div>
 
+  <main class="container">
+   
   <main class="container">
     <h2>About BIHS</h2>
     <p>The Bhaktivedanta Institute for Higher Studies is a place where Science & Philosophy Meet. </p><p> More Coming soon</p>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 BIHS</p>
-  </footer>
+  <!-- shared footer gets injected -->
+  <div id="footer"></div>
+
+  <!-- script that loads header.html and footer.html -->
+  <script src="js/site.js"></script>
 </body>
 </html>
