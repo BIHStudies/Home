@@ -1,17 +1,77 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* ========= BIHS base styles (keep it simple) ========= */
+
+/* 1) Reset + sensible defaults */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; color: #0b1a2b; background: #fff; }
+img, svg, video { max-width: 100%; height: auto; display: block; }
+a { color: #0b4dcc; text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+:focus-visible { outline: 2px solid #0b4dcc; outline-offset: 2px; }
+
+/* 2) Design tokens (easy to tweak later) */
+:root{
+  --bihs-navy: #003366;
+  --bihs-navy-900: #022649;
+  --bihs-gold: #c79a2b;
+  --bihs-sky: #e9f2ff;
+  --text: #0b1a2b;
+  --muted: #5a6a7a;
+  --maxw: 1024px;
+  --pad: 1.25rem;
 }
 
-header, footer {
-  background: #003366;
-  color: white;
-  padding: 1em;
+/* 3) Layout helpers */
+.container { max-width: var(--maxw); margin: 0 auto; padding: var(--pad); }
+.section { padding: 2.5rem var(--pad); }
+.center { text-align: center; }
+
+/* 4) Typography */
+h1,h2,h3,h4 { line-height: 1.25; margin: 0 0 .75rem; font-weight: 700; color: var(--bihs-navy-900); }
+h1 { font-size: clamp(1.8rem, 2.5vw + 1rem, 2.4rem); }
+h2 { font-size: clamp(1.4rem, 1.6vw + .9rem, 1.8rem); }
+h3 { font-size: clamp(1.2rem, 1vw + .8rem, 1.4rem); }
+p { margin: 0 0 1rem; color: var(--text); }
+.lead { font-size: 1.1rem; color: var(--muted); }
+
+/* 5) Header + nav (global, identical on every page) */
+.site-header { background: var(--bihs-navy); color: #fff; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.site-title { margin: 0; font-size: 1.25rem; letter-spacing: .5px; }
+.site-title a { color: #fff; text-decoration: none; }
+
+.site-nav { display: flex; flex-wrap: wrap; gap: .75rem; }
+.site-nav a { color: #fff; padding: .4rem .6rem; border-radius: .4rem; }
+.site-nav a:hover,
+.site-nav a:focus { background: rgba(255,255,255,.14); text-decoration: none; }
+.site-nav a.active { background: #fff; color: var(--bihs-navy); font-weight: 600; }
+
+/* mobile stacking */
+@media (max-width: 700px){
+  .site-header .container { flex-direction: column; align-items: flex-start; }
+  .site-nav { padding-bottom: .5rem; }
 }
 
-nav a {
-  color: white;
-  margin: 0 0.5em;
-  text-decoration: none;
-}
+/* 6) Main content spacing */
+main { padding: 2rem 0; }
+main .container > *:last-child { margin-bottom: 0; }
+
+/* 7) Buttons (optional) */
+.btn { display: inline-block; padding: .6rem 1rem; border-radius: .5rem; font-weight: 600; }
+.btn.primary { background: var(--bihs-gold); color: #1b1b1b; }
+.btn.secondary { background: var(--bihs-navy); color: #fff; }
+.btn:hover { filter: brightness(0.95); text-decoration: none; }
+
+/* 8) Footer */
+.site-footer { background: #0f1f35; color: #c9d4e6; }
+.site-footer a { color: #c9d4e6; }
+.site-footer .container { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+.site-footer p { margin: 0; }
+
+/* 9) Simple grid helpers (use if you want) */
+.grid { display: grid; gap: 1rem; }
+.grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
+@media (max-width: 800px){ .grid.two, .grid.three { grid-template-columns: 1fr; } }
