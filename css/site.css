@@ -176,11 +176,14 @@ main .container > *:last-child { margin-bottom: 0; }
 .btn:hover { filter: brightness(0.95); text-decoration: none; }
 
 /* 8) Footer */
+
 .site-footer {
-  background: #0f1f35;
+  background: var(--bihs-navy); /* <-- THIS IS THE FIX */
   color: #c9d4e6;
   padding: 1rem 2rem;
   text-align: center;
+}
+
 }
 .site-footer a {
   color: #c9d4e6;
