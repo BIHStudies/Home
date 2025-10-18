@@ -105,7 +105,7 @@ p { margin: 0 0 1rem; color: var(--text); }
   position: relative;
   background:
     linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35)),
-    url("img/BI.front.house.jpg");    /* Check this path! */
+    url("..img/BI.front.house.jpg");    /* Check this path! */
   background-size: cover;
   background-position: center;
   color: #fff;
