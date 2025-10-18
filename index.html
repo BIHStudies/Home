@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BIHS Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bhaktivedanta Institute for Higher Studies — where science and philosophy meet.">
-  <link rel="stylesheet" href="css/site.css">
+  <meta charset="UTF-8" />
+  <title>Bhaktivedanta Institute for Higher Studies (BIHS)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BIHS is an international center for research, education, and dialogue at the intersection of science, philosophy, and the Bhāgavata tradition." />
+  <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
+
+  <!-- shared header is injected from header.html -->
   <div id="header"></div>
 
-  <!-- Hero section -->
+  <!-- HERO: short tagline on your local background image (set in css .hero) -->
   <section class="hero">
     <div class="container">
-      <h1>Where Science & Philosophy Meet</h1>
-      <p class="lead">
-       The Bhaktivedanta Institute for Higher Studies is an international center for research, education, and dialogue at the intersection of science, philosophy, and the Bhāgavata tradition. Through courses, conferences, and publications, BIHS explores themes from consciousness to cosmology, from ethics to ecology, building bridges between rigorous scholarship and enduring wisdom
-      </p>
+      <h1>Where Science &amp; Philosophy Meet</h1>
+      <p class="lead">Exploring knowledge through science, philosophy, and the Bhāgavata tradition.</p>
       <a class="btn primary" href="education.html">Explore Education</a>
     </div>
   </section>
 
+  <!-- MAIN: longer mission paragraph in a readable container -->
+  <main class="container">
+    <p class="lead">
+      The Bhaktivedanta Institute for Higher Studies is an international center for research,
+      education, and dialogue at the intersection of science, philosophy, and the Bhāgavata tradition.
+      Through courses, conferences, and publications, BIHS explores themes from consciousness to cosmology,
+      from ethics to ecology, building bridges between rigorous scholarship and enduring wisdom.
+    </p>
 
+    <!-- (optional) quick links/cards can go here later -->
+    <!--
+    <section class="section">
+      <div class="grid three">
+        <div class="card">
+          <h3>Education</h3>
+          <p>Courses, workshops, and Summer programs.</p>
+          <p><a class="btn secondary" href="education.html">View Courses</a></p>
+        </div>
+        <div class="card">
+          <h3>Research</h3>
+          <p>Science &amp; Philosophy Updates and programs.</p>
+          <p><a class="btn secondary" href="research.html">Explore Research</a></p>
+        </div>
+        <div class="card">
+          <h3>Resources</h3>
+          <p>Videos, archives, and free materials.</p>
+          <p><a class="btn secondary" href="resources.html">Browse Resources</a></p>
+        </div>
+      </div>
+    </section>
+    -->
+  </main>
+
+  <!-- shared footer is injected from footer.html -->
   <div id="footer"></div>
+
+  <!-- loads header.html + footer.html and marks active nav item -->
   <script src="js/site.js"></script>
 </body>
 </html>
+What to double-check:
