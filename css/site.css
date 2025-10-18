@@ -47,6 +47,18 @@ p { margin: 0 0 1rem; color: var(--text); }
 .site-nav a:hover,
 .site-nav a:focus { background: rgba(255,255,255,.14); text-decoration: none; }
 .site-nav a.active { background: #fff; color: var(--bihs-navy); font-weight: 600; }
+.hero {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35)),  
+    url("img/20250310_110645.jpg");   /* this is YOUR file */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
 
 /* mobile stacking */
 @media (max-width: 700px){
