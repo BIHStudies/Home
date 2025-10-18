@@ -61,17 +61,19 @@ p { margin: 0 0 1rem; color: var(--text); }
 }
 
 /* mobile stacking */
-@media (max-width: 700px){
-.site-header {
-  background: var(--bihs-navy, #003366);
-  color: #fff;
-  position: sticky;     /* stays visible on scroll */
-  top: 0;
-  z-index: 1000;
+/* 5b) Sticky header (apply always) */
+.site-header { 
+  background: var(--bihs-navy); 
+  color: #fff; 
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
 }
-.site-header .site-title a { color: #fff; text-decoration: none; }
-.site-nav a { color: #fff; text-decoration: none; margin-right: 1rem; }
-.site-nav a.active { background: #fff; color: var(--bihs-navy, #003366); padding: .25rem .5rem; border-radius: .4rem; }
+
+/* mobile stacking (only the layout tweak) */
+@media (max-width: 700px){
+  .site-header .container { flex-direction: column; align-items: flex-start; }
+}
 
 /* 6) Main content spacing */
 main { padding: 2rem 0; }
