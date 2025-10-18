@@ -40,36 +40,129 @@ p { margin: 0 0 1rem; color: var(--text); }
 .site-header {
   background: var(--bihs-navy);
   color: #fff;
-  position: sticky; /* Merged from 5b */
-  top: 0;          /* Merged from 5b */
-  z-index: 1000;   /* Merged from 5b */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5rem 0; /* Added padding for breathing room */
 }
-.site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.site-title { margin: 0; font-size: 1.25rem; letter-spacing: .5px; }
-.site-title a { color: #fff; text-decoration: none; }
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
+/* 5a) Header Logo & Right Side */
+/* REPLACES .site-title. Assumes your logo is an image */
+.site-logo a {
+  display: block;
+}
+.site-logo img {
+  max-height: 50px; /* Adjust height as needed */
+  width: auto;
+}
+
+/* NEW: Container for nav and social links */
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns this block to the right */
+  gap: 0.5rem;
+}
+
+/* NEW: Social icon styles */
+.social-nav {
+  display: flex;
+  gap: 1rem;
+}
+.social-nav a {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+  /* Add font-size if using icon fonts, or width/height if using SVGs/imgs */
+  font-size: 1.2rem; /* Example size for icon fonts */
+}
+.social-nav a:hover,
+.social-nav a:focus {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* 5b) Main Navigation */
 .site-nav { display: flex; flex-wrap: wrap; gap: .75rem; }
-.site-nav a { color: #fff; padding: .4rem .6rem; border-radius: .4rem; }
+.site-nav a {
+  color: #fff;
+  padding: .4rem .6rem;
+  border-radius: .4rem;
+  font-size: 1.1rem; /* Slightly larger like screenshot */
+}
 .site-nav a:hover,
 .site-nav a:focus { background: rgba(255,255,255,.14); text-decoration: none; }
 .site-nav a.active { background: #fff; color: var(--bihs-navy); font-weight: 600; }
 
+/* 5c) Hero Section */
 .hero {
   position: relative;
   background:
     linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35)),
-    url("img/BI.front.house.jpg");    /* NOTE: Check this path! */
+    url("img/BI.front.house.jpg");    /* Check this path! */
   background-size: cover;
   background-position: center;
   color: #fff;
-  min-height: 50vh;
+  min-height: 60vh; /* Increased height to match screenshot */
   display: flex;
   align-items: center;
+  justify-content: center; /* ADDED: horizontal centering */
+  text-align: center;      /* ADDED: text centering */
+  padding: 2rem var(--pad); /* Added padding */
 }
 
-/* mobile stacking (only the layout tweak) */
+/* NEW: Styles for text inside the hero */
+.hero-content {
+  max-width: 800px; /* Constrain text width */
+}
+.hero-content .hero-intro {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+}
+.hero-content h1 {
+  color: #fff; /* OVERRIDE: default dark heading color */
+  font-family: Georgia, "Times New Roman", serif; /* CHANGED: serif font */
+  font-size: clamp(2.2rem, 5vw + 1rem, 3.5rem); /* CHANGED: larger font */
+  margin: 0.5rem 0 1rem;
+}
+.hero-content .hero-tagline {
+  font-size: 1.25rem;
+  color: rgba(255,255,255,0.95);
+  margin: 0;
+  font-weight: 300;
+}
+
+/* 5d) Mobile Stacking */
 @media (max-width: 700px){
-  .site-header .container { flex-direction: column; align-items: flex-start; }
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* NEW: Stack header-right contents on mobile */
+  .header-right {
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  .hero-content h1 {
+    font-size: clamp(1.8rem, 10vw, 2.5rem); /* Adjust H1 for mobile */
+  }
+  .hero-content .hero-tagline {
+    font-size: 1.1rem;
+  }
 }
 
 /* 6) Main content spacing */
