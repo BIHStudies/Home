@@ -12,7 +12,7 @@ a:hover, a:focus { text-decoration: underline; }
 :focus-visible { outline: 2px solid #0b4dcc; outline-offset: 2px; }
 
 /* 2) Design tokens (easy to tweak later) */
-:root{
+:root {
   --bihs-navy: #003366;
   --bihs-navy-900: #022649;
   --bihs-gold: #c79a2b;
@@ -37,7 +37,13 @@ p { margin: 0 0 1rem; color: var(--text); }
 .lead { font-size: 1.1rem; color: var(--muted); }
 
 /* 5) Header + nav (global, identical on every page) */
-.site-header { background: var(--bihs-navy); color: #fff; }
+.site-header {
+  background: var(--bihs-navy);
+  color: #fff;
+  position: sticky; /* Merged from 5b */
+  top: 0;          /* Merged from 5b */
+  z-index: 1000;   /* Merged from 5b */
+}
 .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .site-title { margin: 0; font-size: 1.25rem; letter-spacing: .5px; }
 .site-title a { color: #fff; text-decoration: none; }
@@ -47,27 +53,18 @@ p { margin: 0 0 1rem; color: var(--text); }
 .site-nav a:hover,
 .site-nav a:focus { background: rgba(255,255,255,.14); text-decoration: none; }
 .site-nav a.active { background: #fff; color: var(--bihs-navy); font-weight: 600; }
+
 .hero {
   position: relative;
   background:
-    linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35)),  
-    url("img/BI.front.house.jpg");   /* this is YOUR file */
+    linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    url("img/BI.front.house.jpg");    /* NOTE: Check this path! */
   background-size: cover;
   background-position: center;
   color: #fff;
   min-height: 50vh;
   display: flex;
   align-items: center;
-}
-
-/* mobile stacking */
-/* 5b) Sticky header (apply always) */
-.site-header { 
-  background: var(--bihs-navy); 
-  color: #fff; 
-  position: sticky; 
-  top: 0; 
-  z-index: 1000; 
 }
 
 /* mobile stacking (only the layout tweak) */
@@ -92,12 +89,10 @@ main .container > *:last-child { margin-bottom: 0; }
   padding: 1rem 2rem;
   text-align: center;
 }
-
 .site-footer a {
   color: #c9d4e6;
   text-decoration: none;
 }
-
 .site-footer a:hover {
   text-decoration: underline;
 }
