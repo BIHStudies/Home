@@ -2,7 +2,7 @@ async function loadPart(targetId, file) {
   try {
     const res = await fetch(file, { cache: "no-store" });
     if (!res.ok) throw new Error(res.status + " " + res.statusText);
-    document.getElementById(targetId).innerHTML = await res.text();
+    document.getElementById(targetId).outerHTML = await res.text();
 
     // After header loads, mark active nav link
     if (file === "header.html") {
