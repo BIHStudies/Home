@@ -209,3 +209,9 @@ main .container > *:last-child { margin-bottom: 0; }
   background: var(--bihs-sky); /* This is your light blue color */
   padding: 2.5rem var(--pad); /* This adds spacing */
 }
+/*
+  Improves spacing in the Mission/Vision block
+*/
+.feature-block h2 {
+  margin-bottom: 1rem;
+}
