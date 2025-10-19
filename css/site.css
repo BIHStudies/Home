@@ -201,3 +201,11 @@ main .container > *:last-child { margin-bottom: 0; }
 .grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
 @media (max-width: 800px){ .grid.two, .grid.three { grid-template-columns: 1fr; } }
+
+/*
+  Styles for the Mission/Vision block
+*/
+.feature-block {
+  background: var(--bihs-sky); /* This is your light blue color */
+  padding: 2.5rem var(--pad); /* This adds spacing */
+}
