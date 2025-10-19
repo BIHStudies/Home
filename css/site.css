@@ -28,6 +28,12 @@ a:hover, a:focus { text-decoration: underline; }
 .section { padding: 2.5rem var(--pad); }
 .center { text-align: center; }
 
+/* NEW: A section with a subtle background to pop */
+.feature-block {
+  background: var(--bihs-sky);
+  padding: 2.5rem var(--pad); /* Gives it some breathing room */
+}
+
 /* 4) Typography */
 h1,h2,h3,h4 { line-height: 1.25; margin: 0 0 .75rem; font-weight: 700; color: var(--bihs-navy-900); }
 h1 { font-size: clamp(1.8rem, 2.5vw + 1rem, 2.4rem); }
