@@ -228,3 +228,9 @@ main .container > *:last-child { margin-bottom: 0; }
 .site-footer .social-nav a:hover {
   color: #fff; /* Brighten on hover */
 }
+/* 11) Standardize Image Sizes */
+.summary-image img {
+  width: 100%;     /* Make the image fill its container */
+  height: 350px;    /* SETS A STANDARD HEIGHT for all images */
+  object-fit: cover; /* This is the magic: it fills the box and crops, no distortion */
+}
