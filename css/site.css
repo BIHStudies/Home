@@ -172,9 +172,11 @@ main .container > *:last-child { margin-bottom: 0; }
 
 /* 7) Buttons (optional) */
 .btn { display: inline-block; padding: .6rem 1rem; border-radius: .5rem; font-weight: 600; }
-.btn.primary { background: var(--bihs-gold); color: #1b1b1b; }
+
+.btn.primary { background: var(--bihs-sky); color: var(--bihs-navy-900); }
 .btn.secondary { background: var(--bihs-navy); color: #fff; }
 .btn:hover { filter: brightness(0.95); text-decoration: none; }
+
 
 /* 8) Footer */
 .site-footer {
