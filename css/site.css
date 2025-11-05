@@ -211,3 +211,18 @@ main .container > *:last-child { margin-bottom: 0; }
 .feature-block h2 {
   margin-bottom: 1rem;
 }
+/* 10) Footer Social Icons */
+.site-footer .social-nav {
+  justify-content: center; /* Center the icons */
+  margin-bottom: 1rem; /* Add space below them */
+  font-size: 1.5rem; /* Make them a bit bigger */
+}
+
+.site-footer .social-nav a {
+  color: #c9d4e6; /* Use the footer's light link color */
+  opacity: 1; /* Override the 0.8 opacity from the header rule */
+}
+
+.site-footer .social-nav a:hover {
+  color: #fff; /* Brighten on hover */
+}
