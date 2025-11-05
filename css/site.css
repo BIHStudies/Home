@@ -230,7 +230,7 @@ main .container > *:last-child { margin-bottom: 0; }
 }
 /* 11) Standardize Image Sizes */
 .summary-image img {
-  width: 100%;     /* Make the image fill its container */
-  height: 350px;    /* SETS A STANDARD HEIGHT for all images */
-  object-fit: cover; /* This is the magic: it fills the box and crops, no distortion */
+  width: 100%;
+  height: 250px;    /* CHANGED: Was 350px, now 250px */
+  object-fit: cover; /* This prevents any deforming */
 }
