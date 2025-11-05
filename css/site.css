@@ -157,11 +157,7 @@ p { margin: 0 0 1rem; color: var(--text); }
     align-items: flex-start;
     margin-top: 1rem;
   }
-  .site-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
-  }
+  
   .hero-content h1 {
     font-size: clamp(1.8rem, 10vw, 2.5rem); /* Adjust H1 for mobile */
   }
