@@ -250,3 +250,23 @@ main .container > *:last-child { margin-bottom: 0; }
   width: 100%;
   height: 100%;
 }
+/* 13) Article Card Style */
+.article-card {
+  display: flex; /* Puts image and text side-by-side */
+  align-items: flex-start; /* Aligns top of image with top of text */
+  gap: 1rem; /* Space between image and text */
+}
+.article-card img {
+  width: 75px;  /* Small, consistent width */
+  height: 75px; /* Small, consistent height */
+  object-fit: cover; /* Prevents distortion */
+  border-radius: 50%; /* Makes it a circle (or use 8px for a square) */
+  flex-shrink: 0; /* Stops image from shrinking */
+}
+.article-card h4 {
+  margin-bottom: 0.25rem; /* Tighter spacing for title */
+}
+.article-card p {
+  font-size: 0.9rem; /* Slightly smaller text for the summary */
+  margin-bottom: 0.5rem;
+}
