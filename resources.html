@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore videos, publications, and other resources from the Bhaktivedanta Institute for Higher Studies.">
   <link rel="stylesheet" href="css/site.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
   
@@ -17,26 +17,34 @@
     <section class="feature-block center">
       <div class="container">
         <h1>Resources</h1>
-        <p class="lead">(Your tagline for Resources. E.g., "An open library of our research, lectures, and publications.")</p>
+        <p class="lead">An open library of our research, lectures, and publications.</p>
       </div>
     </section>
 
     <section class="summary-block">
       <div class="container">
         <div class="center">
-            <h2>Featured Videos</h2>
+          <h2>Podcast & Featured Videos</h2>
         </div>
         
         <div class="grid two align-center">
           
           <div class="summary-image">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ASginb504Tk?si=3eLOcBtJ9rFn3XwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
+            <div class="video-wrapper">
+              <iframe 
+                src="https://www.youtube.com/embed/ASginb504Tk?si=3eLOcBtJ9rFn3XwJ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
           <div class="summary-text">
-            <h3>Video Title Goes Here</h3>
-            <p>A brief description of the video, lecture, or conference presentation. You can link this to YouTube or a details page.</p>
-            <a href="#" class="btn primary">Watch Now</a>
+            <h3>BIHS Podcast: Episode 1</h3>
+            <p>A brief description of this podcast or video. This text will now safely stay next to the video, not behind it.</p>
+            <a href="[YOUR-YOUTUBE-CHANNEL-LINK]" class="btn primary">See All Episodes</a>
           </div>
         </div>
       </div>
@@ -45,14 +53,54 @@
     <section class="feature-block-alt">
       <div class="container">
         <div class="center">
-            <h2>Publications & Articles</h2>
-           <img src="https://placehold.co/500x350/e9f2ff/022649?text=Video+Thumbnail" alt="Video Thumbnail">
-            <p>(Intro text for your papers, books, and articles...)</p>
-            </div>
+          <h2>Publications & Articles</h2>
+          <p>Explore our latest papers, research, and insights from the team.</p>
+        </div>
+
+        <div class="grid two" style="margin-top: 2rem;">
+          <div>
+            <h4>Article Title 1</h4>
+            <p>A short summary of the article goes here. You can link to a PDF or a blog post.</p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <h4>Article Title 2</h4>
+            <p>A short summary of the article goes here. You can link to a PDF or a blog post.</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-block">
+      <div class="container">
+        <div class="center">
+          <h2>Books & Major Publications</h2>
+        </div>
+        
+        <div class="grid two align-center">
+          <div class="summary-image">
+            <img src="https://placehold.co/400x500/e9f2ff/022649?text=Book+Cover" alt="Book Cover">
+          </div>
+          <div class="summary-text">
+            <h3>Book Title Goes Here</h3>
+            <p>A description of the book and why it's a must-read for those interested in science, philosophy, and consciousness.</p>
+            <a href="[LINK-TO-AMAZON-OR-STORE]" class="btn primary">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="feature-block-alt center">
+      <div class="container">
+        <h2>Explore Our Full Library</h2>
+        <p>Looking for something specific? Dive into our complete archive of media, research, and public talks.</p>
+        <a href="[LINK-TO-LIBRARY-PAGE-OR-SITE]" class="btn primary" style="background: var(--bihs-navy); color: #fff;">Explore the Archive</a>
       </div>
     </section>
 
   </main>
+  
   <div id="footer"></div>
 
   <script src="js/site.js"></script>
