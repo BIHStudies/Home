@@ -231,6 +231,6 @@ main .container > *:last-child { margin-bottom: 0; }
 /* 11) Standardize Image Sizes */
 .summary-image img {
   width: 100%;
-  height: 250px;    /* CHANGED: Was 350px, now 250px */
+  height: 290px;    /* CHANGED: Was 350px, now 250px */
   object-fit: cover; /* This prevents any deforming */
 }
