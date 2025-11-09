@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donations | BIHS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support the Bhaktivedanta Institute for Higher Studies.">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- 
+    DONATION-SPECIFIC STYLES
+    This CSS is only for this page. I have adapted it to 
+    use your site's fonts, colors, and modern style.
+  -->
+  <style>
+    /* Use the border-radius from our modern CSS */
+    :root {
+      --radius: 8px; 
+    }
+
+    .donate-grid{
+      display:grid;
+      gap:40px;
+      max-width:1200px;
+      margin:0 auto;
+    }
+    @media(min-width:900px){
+      .donate-grid{grid-template-columns:1.3fr 1fr;align-items:start}
+    }
+    
+    /* Card styles */
+    .intro-card, .donate-box {
+      background:#fff; 
+      color: var(--text);
+      border-radius:var(--radius);
+      padding:26px;
+      /* Use the modern shadow we added to site.css */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e6ebf3;
+    }
+    .intro-card h2{margin:0 0 8px;font-size:clamp(22px,3vw,30px);color:var(--bihs-navy-900)}
+    .intro-card h3{margin:8px 0 14px;font-size:clamp(18px,2.8vw,22px);color:var(--bihs-navy);font-weight:700}
+    .intro-card p{margin:0 0 14px;line-height:1.65}
+    
+    .donate-box h2{margin:0 0 18px;font-size:24px;color:var(--bihs-navy-900);text-align:center}
+    .donate-options{display:grid;gap:14px}
+
+    /* ADAPTED BUTTONS:
+      Using your new light-blue button style
+    */
+    .opt, .opt:link, .opt:visited, .opt:hover, .opt:active,
+    button.opt, button.opt:hover {
+      all: unset; /* Resets button styles */
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align: center;
+      gap:12px;
+      padding:16px;
+      border-radius:var(--radius);
+      /* This is your light blue button style */
+      background: var(--bihs-sky);
+      color: var(--bihs-navy-900) !important;
+      font-weight:700;
+      font-size:18px;
+      text-decoration:none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition:.2s ease;
+      cursor:pointer;
+    }
+    .opt:hover, button.opt:hover {
+      filter: brightness(0.95);
+      transform:translateY(-1px);
+    }
+    .opt img{height:22px;width:auto;opacity:.9}
+
+    /* Panel styles */
+    .panel{display:none;margin-top:20px}
+    .card{background:#fff;color:#000;border-radius:14px;padding:20px;border:1px solid #e6ebf3}
+    .iframe-wrap{position:relative;width:100%;height:700px;overflow:hidden;border:1px solid #e6ebf3;border-radius:12px;background:#fafafa}
+    .iframe-wrap iframe{position:absolute;inset:0;border:0;width:100%;height:100%}
+    .qr{text-align:center;margin-top:10px}
+    .qr img{width:100%;max-width:260px;border-radius:12px;border:1px solid #ccc}
+  </style>
+</head>
+<body>
+  
+  <div id="header"></div>
+
+  <main>
+    
+    <!-- Standard Page Title -->
+    <section class="feature-block center">
+      <div class="container">
+        <h1>Support Our Work</h1>
+        <p class="lead">Help fuel the frontiers of science and philosophy.</p>
+      </div>
+    </section>
+
+    <!-- 
+      This is your donation grid content, placed
+      inside a standard "summary-block" for a clean
+      white background.
+    -->
+    <section class="summary-block">
+      <div class="donate-grid container">
+        
+        <!-- LEFT COLUMN: Intro -->
+        <div class="intro-card">
+          <h3>Fueling the Frontiers of Science and Philosophy</h3>
+
+          <p>The Bhaktivedanta Institute for Higher Studies is more than a research center—it is a sanctuary where science and philosophy meet to explore the deepest questions: What is consciousness? Where did life come from? Is there purpose behind the universe?</p>
+
+          <p>Our scholars are breaking barriers, bringing modern research into dialogue with the timeless wisdom of the Śrīmad-Bhāgavatam.</p>
+
+          <p>Your gift will empower the minds—and hearts—that will shape science and metaphysics for generations to come. Your gift fuels scholarships, seminars, and resources that empower these scholars to share discoveries with the world.</p>
+
+          <p>Together, we can fulfill Srila Prabhupada’s vision of placing science and philosophy at the same table—and shape how humanity understands reality.</p>
+        </div>
+
+        <!-- RIGHT COLUMN: Donate options -->
+        <div class="donate-box">
+          <h2>Donate Now</h2>
+          <div class="donate-options">
+            <!-- Raisely expands inline -->
+            <button class="opt" onclick="openPanel('raisely')">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Raisely_Icon.svg/48px-Raisely_Icon.svg.png" alt="">
+              Credit Card
+            </button>
+
+            <!-- PayPal opens directly -->
+            <a class="opt" href="https://www.paypal.com/donate/?hosted_button_id=HNVKEBZTFEEQ4" target="_blank" rel="noopener">
+              <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="">
+              PayPal
+            </a>
+
+            <!-- UPI expands inline -->
+            <button class="opt" onclick="openPanel('upi')">
+              <img src="https://static.tildacdn.com/tild3236-6565-4537-b334-643966393536/UPI-logo.png" alt="">
+              UPI (India)
+            </button>
+          </div>
+
+          <!-- Panels -->
+          <div id="panel-raisely" class="panel">
+            <div class="card">
+              <h3>Donate with Credit Card (via Raisely)</h3>
+              <div class="raisely-donate"
+                   data-campaign-path="bhaktivedanta-institute-for-higher-studies-support"
+                   data-profile=""
+                   data-width="100%"
+                   data-height="800">
+                <!-- This script MUST be here for Raisely to work -->
+                <script src="https://cdn.raisely.com/v3/public/embed.js"></script>
+              </div>
+              <noscript>
+                <div class="iframe-wrap">
+                  <iframe src="https://bhaktivedanta-institute-for-higher-studies-support.raiselysite.com/donate" loading="lazy"></iframe>
+                </div>
+              </noscript>
+            </div>
+          </div>
+
+          <div id="panel-upi" class="panel">
+            <div class="card">
+              <h3>Donate with UPI</h3>
+              <p>Scan this QR code with your UPI app:</p>
+              <div class="qr">
+                <img src="https://static.tildacdn.com/tild6464-3635-4362-b763-383832613835/UPI-QR.jpg" alt="UPI QR Code">
+              </div>
+              <p><strong>UPI ID:</strong> Vyapar.172927995911@hdfcbank</p>
+            </div>
+          </div>
+        </div> <!-- End right column -->
+      </div> <!-- End donate-grid -->
+    </section>
+
+  </main>
+  
+  <div id="footer"></div>
+
+  <!-- Main site script -->
+  <script src="js/site.js"></script>
+  
+  <!-- Inline script for this page -->
+  <script>
+    function openPanel(which){
+      document.querySelectorAll('.panel').forEach(p => p.style.display='none');
+      const el = document.getElementById('panel-'+which);
+      if(el){ el.style.display='block'; el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    }
+  </script>
+</body>
+</html>
