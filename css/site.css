@@ -301,3 +301,36 @@ main .container > *:last-child { margin-bottom: 0; }
   font-weight: 700;
   color: var(--bihs-navy);
 }
+/* This is for the main article text */
+.article-content {
+  max-width: 800px; /* Sets a clean, readable width */
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+  line-height: 1.7; /* More line spacing for easy reading */
+  font-size: 1.1rem;
+}
+
+/* This is your "corner picture" */
+.article-speaker-img {
+  float: right; /* Pushes the image to the right "corner" of the text */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0.5rem 0 1rem 1.5rem; /* Adds space around the image */
+}
+
+.article-content p {
+    margin-bottom: 1.5rem; /* Good spacing between paragraphs */
+}
+
+/* A helper class to clear the float */
+.clear-float {
+    clear: both;
+}
+
+/* A section for the final "Read More" link */
+.more-articles-link {
+  padding: 2.5rem 1.25rem;
+  background: var(--bihs-sky); /* Matches the header */
+}
