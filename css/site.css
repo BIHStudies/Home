@@ -283,37 +283,32 @@ main .container > *:last-child { margin-bottom: 0; }
 }
 /* 15) NEW Modern Article Header */
 .article-header-modern {
-  position: relative; /* Needed for the overlay */
-  padding: 5rem 1.5rem; /* Lots of space */
-  min-height: 40vh; /* At least 40% of the screen height */
+  position: relative;
+  padding: 5rem 1.5rem;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff; /* White text */
-  background-size: cover; /* The image covers the whole area */
+  color: #fff;
+  background-size: cover;
   background-position: center;
 }
-
-/* This adds the dark overlay so the text is readable */
 .article-header-modern::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* Black, 60% transparent */
+  background: rgba(0, 0, 0, 0.6); /* This is the dark overlay */
   z-index: 1;
 }
-
-/* This keeps your text on top of the overlay */
 .article-header-modern .container {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Keeps text on top of overlay */
 }
-
 .article-header-modern h1 {
   color: #fff;
-  font-size: clamp(2rem, 5vw + 1rem, 3.5rem); /* Big title */
+  font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   margin-bottom: 0.5rem;
 }
 .article-header-modern h2 {
@@ -328,19 +323,7 @@ main .container > *:last-child { margin-bottom: 0; }
   color: rgba(255,255,255,0.9);
   font-size: 1.1rem;
 }
-
-/* This is still your main article content */
-.article-content {
-  max-width: 800px;
-  margin: 2.5rem auto;
-  padding: 0 1.25rem;
-  line-height: 1.7;
-  font-size: 1.1rem;
-}
-.article-content p {
-  margin-bottom: 1.5rem;
-}
-/* We don't need the floating speaker image anymore */
+/* We hide the old small "corner image" */
 .article-speaker-img {
   display: none;
 }
