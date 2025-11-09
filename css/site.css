@@ -63,7 +63,7 @@ p { margin: 0 0 1rem; color: var(--text); }
   display: block;
 }
 .site-logo img {
-  max-height: 65px; /* Adjust height as needed */
+  max-height: 85px; /* Adjust height as needed */
   width: auto;
 }
 
@@ -281,56 +281,66 @@ main .container > *:last-child { margin-bottom: 0; }
   border-bottom: none;
   margin-bottom: 0;
 }
-/* 15) Full Article Page Layout */
-.article-header {
-  background: var(--bihs-sky); /* Light blue background */
+/* 15) NEW Modern Article Header */
+.article-header-modern {
+  position: relative; /* Needed for the overlay */
+  padding: 5rem 1.5rem; /* Lots of space */
+  min-height: 40vh; /* At least 40% of the screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 2.5rem 1.25rem;
+  color: #fff; /* White text */
+  background-size: cover; /* The image covers the whole area */
+  background-position: center;
 }
-.article-header h1 {
+
+/* This adds the dark overlay so the text is readable */
+.article-header-modern::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Black, 60% transparent */
+  z-index: 1;
+}
+
+/* This keeps your text on top of the overlay */
+.article-header-modern .container {
+  position: relative;
+  z-index: 2;
+}
+
+.article-header-modern h1 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw + 1rem, 3.5rem); /* Big title */
   margin-bottom: 0.5rem;
 }
-.article-header h2 {
-  font-size: 1.2rem;
+.article-header-modern h2 {
+  font-size: 1.3rem;
   font-style: italic;
-  color: var(--muted);
+  color: rgba(255,255,255,0.9);
   margin-bottom: 0.5rem;
   font-weight: 400;
 }
-.article-header .author {
+.article-header-modern .author {
   font-weight: 700;
-  color: var(--bihs-navy);
-}
-/* This is for the main article text */
-.article-content {
-  max-width: 800px; /* Sets a clean, readable width */
-  margin: 2rem auto;
-  padding: 0 1.25rem;
-  line-height: 1.7; /* More line spacing for easy reading */
+  color: rgba(255,255,255,0.9);
   font-size: 1.1rem;
 }
 
-/* This is your "corner picture" */
-.article-speaker-img {
-  float: right; /* Pushes the image to the right "corner" of the text */
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 0.5rem 0 1rem 1.5rem; /* Adds space around the image */
+/* This is still your main article content */
+.article-content {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
-
 .article-content p {
-    margin-bottom: 1.5rem; /* Good spacing between paragraphs */
+  margin-bottom: 1.5rem;
 }
-
-/* A helper class to clear the float */
-.clear-float {
-    clear: both;
-}
-
-/* A section for the final "Read More" link */
-.more-articles-link {
-  padding: 2.5rem 1.25rem;
-  background: var(--bihs-sky); /* Matches the header */
+/* We don't need the floating speaker image anymore */
+.article-speaker-img {
+  display: none;
 }
