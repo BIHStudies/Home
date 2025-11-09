@@ -1,1 +1,62 @@
+The easiest and most user-friendly way to handle this is to create a simple, single-column "article list" page.
 
+You don't need a complex grid or multiple columns. Just a clean, scrolling page where each article is listed one after the other, like a blog. This is the easiest for you to build (just copy and paste) and the easiest for your users to read.
+
+Here is the complete, ready-to-use code for your IHS.Articles.html page.
+
+1. The HTML (Save as IHS.Articles.html)
+This code already includes your header, footer, and a simple structure for your articles.
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Articles | BIHS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An archive of articles, research, and insights from the Bhaktivedanta Institute for Higher Studies.">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+  
+  <div id="header"></div>
+
+  <main>
+    
+    <section class="feature-block center">
+      <div class="container">
+        <h1>Article Archive</h1>
+        <p class="lead">Explore our complete archive of articles, research, and insights from the team.</p>
+      </div>
+    </section>
+
+    <section class="summary-block">
+      <div class="container" style="max-width: 800px; text-align: left;">
+
+        <div class="article-entry">
+          <h3>Michael Cremo — TSC Barcelona Report</h3>
+          <p>Michael Cremo (Drutakarma Dasa) reflected on BIHS’s growing role at the Toward a Science of Consciousness conference. What began with posters has advanced to workshops and plenary talks. In his presentation "Darwin and Consciousness," he argued that reducing awareness to brain activity is inadequate, highlighting the field's openness to Vedic perspectives.</p>
+          <a href="[LINK-TO-ARTICLE-1]" class="btn primary">Read Reflections</a>
+        </div>
+        <div class="article-entry">
+          <h3>Article Title 2 Goes Here</h3>
+          <p>A brief summary of your news article or announcement will go here. Keep it to a few sentences to entice the reader to click.</p>
+          <a href="[LINK-TO-ARTICLE-2]" class="btn primary">Read More</a>
+        </div>
+        <div class="article-entry">
+          <h3>Article Title 3 Goes Here</h3>
+          <p>A brief summary of your news article or announcement will go here. Keep it to a few sentences to entice the reader to click.</p>
+          <a href="[LINK-TO-ARTICLE-3]" class="btn primary">Read More</a>
+        </div>
+        </div>
+    </section>
+
+  </main>
+  
+  <div id="footer"></div>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
