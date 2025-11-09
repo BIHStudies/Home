@@ -344,3 +344,48 @@ main .container > *:last-child { margin-bottom: 0; }
 .article-speaker-img {
   display: none;
 }
+/* 16) Add "Breathing Room" to all pages */
+.feature-block,
+.summary-block {
+  padding-top: 4.5rem; 
+  padding-bottom: 4.5rem;
+}
+.more-articles-link {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+
+/* 17) Add Rounded Corners to soften the site */
+.btn,
+.btn.primary[style*="background: var(--bihs-navy)"] {
+  border-radius: .5rem; 
+}
+.summary-image img {
+  border-radius: 8px; 
+}
+.video-wrapper {
+  border-radius: 8px;
+}
+
+
+/* 18) Add Subtle Shadows for depth */
+.summary-image img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.video-wrapper {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+/* This makes your article cards "pop" */
+.article-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+/* 19) Modernize Typography (Lighter headings) */
+h1, h2 {
+  font-weight: 600; /* 700 is bold, 600 is "semi-bold" */
+}
