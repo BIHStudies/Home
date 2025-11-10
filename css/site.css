@@ -396,71 +396,75 @@ h1, h2 {
 /* For use on specific pages only      */
 /* =================================== */
 
-.article-card-grid {
+article-card-grid {
   display: grid;
-  gap: 30px; /* Space between cards */
+  /* This creates 1 column on mobile, 2 on tablets, and 3 on desktops */
+  grid-template-columns: 1fr;
+  gap: 2rem;
   max-width: 1200px;
-  margin: 40px auto; /* Center the grid */
-  padding: 0 20px;
+  margin: 2.5rem auto 0; /* Adds space above the grid */
 }
 
+/* Medium screens (tablets) */
 @media (min-width: 600px) {
   .article-card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Large screens (desktops) */
+@media (min-width: 900px) {
+  .article-card-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* The Card Itself */
 .modern-article-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  overflow: hidden; /* Ensures image corners are rounded */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* Modern shadow */
+  overflow: hidden; /* Keeps the image corners rounded */
   display: flex;
   flex-direction: column;
+  text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 
 .modern-article-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
+/* 1. The Main Image */
 .card-image-wrap {
-  position: relative;
+  position: relative; /* This is the key to placing elements on top */
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
-  overflow: hidden;
+  height: 200px; /* All cards have a consistent image height */
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: flex-end; /* Position author image at bottom */
-  padding: 15px; /* Padding for author image */
 }
 
-.card-image-wrap::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 50%); /* Gradient overlay for author visibility */
-  z-index: 1;
-}
 
+/* 2. The Author Picture */
 .card-author-img {
+  position: absolute;
+  bottom: -30px; /* Pulls the image down so it overlaps */
+  left: 20px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 3px solid #fff;
   object-fit: cover;
-  position: relative; /* Stays above the overlay */
-  z-index: 2;
+  z-index: 2; /* Sits on top of everything */
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
-
+/* 3. The "Tag" Word */
 .card-tag {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: rgba(var(--bihs-navy-rgb, 0, 51, 102), 0.8); /* Using your navy color with transparency */
+  background: rgba(0, 51, 102, 0.8); /* Your Navy color, semi-transparent */
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -469,17 +473,18 @@ h1, h2 {
   text-transform: uppercase;
   z-index: 2;
 }
-
-
+/* The Text Content */
 .card-content {
   padding: 20px;
-  flex-grow: 1; /* Allows content to take up remaining space */
+  padding-top: 45px; /* CRITICAL: Adds space for the author pic */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
 }
 
 .card-content h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: var(--bihs-navy-900);
   margin-top: 0;
   margin-bottom: 10px;
@@ -489,34 +494,10 @@ h1, h2 {
 .card-content p {
   font-size: 0.95rem;
   color: var(--text);
-  margin-bottom: 15px;
-  flex-grow: 1; /* Makes sure all cards have text starting from the same point */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1; /* Ensures all blurbs take same space */
 }
-
-.card-meta {
-  font-size: 0.8rem;
-  color: var(--muted);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto; /* Pushes meta to the bottom */
-  padding-top: 15px;
-  border-top: 1px solid #eee;
-}
-
-.card-read-more {
-  display: inline-block;
-  color: var(--bihs-navy);
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.card-read-more:hover {
-  text-decoration: underline;
-}
-
-/* Fallback for --bihs-navy-rgb variable if not defined elsewhere */
-:root {
-  --bihs-navy-rgb: 0, 51, 102; /* Default RGB for --bihs-navy */
+.card-content .btn {
+  margin-top: auto; /* Pushes the button to the bottom */
 }
