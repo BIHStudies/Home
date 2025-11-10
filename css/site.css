@@ -405,16 +405,12 @@ article-card-grid {
   margin: 2.5rem auto 0; /* Adds space above the grid */
 }
 
-/* Medium screens (tablets) */
-@media (min-width: 600px) {
+/* NEW 2-COLUMN RULE:
+  On any screen wider than 550px, it will be a 2-column grid.
+*/
+@media (min-width: 550px) {
   .article-card-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-/* Large screens (desktops) */
-@media (min-width: 900px) {
-  .article-card-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
