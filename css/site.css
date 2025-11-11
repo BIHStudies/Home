@@ -63,7 +63,7 @@ p { margin: 0 0 1rem; color: var(--text); }
   display: block;
 }
 .site-logo img {
-  max-height: 85px; /* Adjust height as needed */
+  max-height: 95px; /* Adjust height as needed */
   width: auto;
 }
 
