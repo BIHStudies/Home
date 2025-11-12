@@ -497,3 +497,13 @@ article-card-grid {
 .card-content .btn {
   margin-top: auto; /* Pushes the button to the bottom */
 }
+/* =================================== */
+/* Tighter Page Headers (2025-11-11)   */
+/* =================================== */
+
+/* This rule overrides the "Global Modern Spacing"
+   and makes your light-blue title sections shorter. */
+.feature-block {
+  padding-top: 2.5rem; 
+  padding-bottom: 2.5rem;
+}
