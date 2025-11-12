@@ -507,3 +507,86 @@ article-card-grid {
   padding-top: 2.5rem; 
   padding-bottom: 2.5rem;
 }
+
+/* =================================== */
+/* Modern "Fat Footer" Styles          */
+/* =================================== */
+
+/* This overrides the old, simple text-align: center */
+.site-footer {
+  text-align: left;
+  padding: 4rem 2rem 2rem; /* More spacing */
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column on mobile */
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+  font-size: 0.95rem;
+}
+
+/* On tablets and desktops, go to 3 columns */
+@media (min-width: 600px) {
+  .footer-grid {
+    /* This creates a 2fr / 1fr / 1fr layout */
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff; /* White heading */
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.footer-col p {
+  color: #c9d4e6; /* Lighter text for the blurb */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Style the link lists */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+.footer-links a {
+  color: #c9d4e6; /* Lighter link color */
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #fff; /* Bright white on hover */
+  text-decoration: underline;
+}
+
+/* Style the social icons in the footer */
+.site-footer .social-nav {
+  justify-content: flex-start; /* Align left */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.site-footer .social-nav a {
+  color: #c9d4e6;
+  opacity: 1;
+}
+.site-footer .social-nav a:hover {
+  color: #fff;
+}
+
+/* The copyright text at the very bottom */
+.footer-copyright {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  color: #c9d4e6;
+  font-size: 0.9rem;
+}
+.footer-copyright p {
+  margin: 0;
+}
