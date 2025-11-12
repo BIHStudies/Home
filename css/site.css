@@ -120,7 +120,7 @@ p { margin: 0 0 1rem; color: var(--text); }
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem var(--pad);
+  padding: 1rem var(--pad);
 }
 
 /* Styles for text inside the hero */
@@ -167,7 +167,7 @@ p { margin: 0 0 1rem; color: var(--text); }
 }
 
 /* 6) Main content spacing */
-main { padding: 2rem 0; }
+main { padding: 1rem 0; }
 main .container > *:last-child { margin-bottom: 0; }
 
 /* 7) Buttons (optional) */
@@ -220,10 +220,6 @@ main .container > *:last-child { margin-bottom: 0; }
   font-size: 2.5rem; /* Make them a bit bigger */
 }
 
-.site-footer .social-nav a {
-  color: #c9d4e6; /* Use the footer's light link color */
-  opacity: 0.2 ; /* Override the 0.8 opacity from the header rule */
-}
 
 .site-footer .social-nav a:hover {
   color: #fff; /* Brighten on hover */
@@ -272,8 +268,8 @@ main .container > *:last-child { margin-bottom: 0; }
 }
 * 14) Article List Page Style */
 .article-entry {
-  padding-bottom: 1.5rem; /* Space under the button */
-  margin-bottom: 1.5rem; /* Space before the next line */
+  padding-bottom: 1rem; /* Space under the button */
+  margin-bottom: 1rem; /* Space before the next line */
   border-bottom: 1px solid #e0e0e0; /* A clean separator line */
 }
 /* Prevents a double line on the last article */
