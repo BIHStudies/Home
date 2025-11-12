@@ -569,7 +569,7 @@ article-card-grid {
 .site-footer .social-nav {
   justify-content: flex-start; /* Align left */
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .site-footer .social-nav a {
   color: #c9d4e6;
