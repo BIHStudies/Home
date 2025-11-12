@@ -31,7 +31,7 @@ a:hover, a:focus { text-decoration: underline; }
 /* NEW: A section with a subtle background to pop */
 .feature-block {
   background: var(--bihs-sky);
-  padding: 2.5rem var(--pad); /* Gives it some breathing room */
+  padding: 0.5rem var(--pad); /* Gives it some breathing room */
 }
 
 /* 4) Typography */
