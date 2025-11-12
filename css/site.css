@@ -570,6 +570,7 @@ article-card-grid {
   justify-content: flex-start; /* Align left */
   margin-bottom: 1rem;
   font-size: 2rem;
+  gap: 1.5rem;
 }
 .site-footer .social-nav a {
   color: #c9d4e6;
