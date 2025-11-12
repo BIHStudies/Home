@@ -82,7 +82,7 @@ p { margin: 0 0 1rem; color: var(--text); }
 }
 .social-nav a {
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.2;
   text-decoration: none;
   font-size: 1.2rem; /* Example size for icon fonts */
 }
