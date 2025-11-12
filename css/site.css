@@ -587,3 +587,12 @@ article-card-grid {
 .footer-copyright p {
   margin: 0;
 }
+/* --- Book Cover Fix (for Library page) --- */
+#books .summary-image {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#books .summary-image img {
+  height: auto;
+  width: 100%;
+}
