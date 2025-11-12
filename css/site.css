@@ -587,12 +587,15 @@ article-card-grid {
 .footer-copyright p {
   margin: 0;
 }
-/* --- Book Cover Fix (for Library page) --- */
+/* --- Book Cover Fix (for Library/Ethics page) --- */
 #books .summary-image {
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 300px; /* Sets a nice max width */
+  margin: 0 auto;   /* Centers it in the column */
 }
+
 #books .summary-image img {
-  height: auto;
-  width: 100%;
+  height: auto;         /* Lets the height be natural (portrait) */
+  width: 100%;          /* Fit the container width */
+  object-fit: contain;  /* THIS IS THE FIX: Show the whole image */
+  box-shadow: none;     /* Removes the shadow, which can look odd on a book */
 }
