@@ -372,7 +372,7 @@ h1, h2 {
 /* For use on specific pages only      */
 /* =================================== */
 
-article-card-grid {
+.article-card-grid {
   display: grid;
   /* This creates 1 column on mobile, 2 on tablets, and 3 on desktops */
   grid-template-columns: 1fr;
