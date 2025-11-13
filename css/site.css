@@ -376,9 +376,9 @@ article-card-grid {
   display: grid;
   /* This creates 1 column on mobile, 2 on tablets, and 3 on desktops */
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1200px;
-  margin: 2.5rem auto 0; /* Adds space above the grid */
+  margin: 1.5rem auto 0; /* Adds space above the grid */
 }
 
 /* NEW 2-COLUMN RULE:
@@ -580,14 +580,14 @@ article-card-grid {
 /* This is the short padding you want */
 .feature-block {
   background: var(--bihs-sky);
-  padding: 2.5rem var(--pad); 
+  padding: 1.5rem var(--pad); 
 }
 
 /* --- White Content Sections --- */
 /* This is the tall, modern padding */
 .summary-block {
   background: #fff;
-  padding: 2.5rem var(--pad); 
+  padding: 1.5rem var(--pad); 
 }
 /* =================================== */
 /* FIX: Course Page Image (Text Wrap)  */
