@@ -590,12 +590,26 @@ article-card-grid {
   padding: 2.5rem var(--pad); 
 }
 /* =================================== */
-/* FIX: Course Page Image (No Crop)    */
+/* FIX: Course Page Image (Text Wrap)  */
 /* =================================== */
 
-/* This rule ONLY targets the image on the courses page */
+/* This rule makes the image float to the left */
+#courses-page .summary-image {
+  float: left;
+  max-width: 400px; /* Adjust this width as needed */
+  margin-right: 1.5rem; /* Space between image and text */
+  margin-bottom: 0.5rem; /* Space below image */
+}
+
+/* This rule makes the image inside it look good */
 #courses-page .summary-image img {
   height: auto; /* Lets the height be natural */
-  object-fit: contain; /* Shows the full image, no cropping */
-  box-shadow: none; /* Looks better without a shadow */
+  object-fit: cover; /* This makes it look sharp */
+  border-radius: 8px; /* Keeps the modern corner */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Keeps the shadow */
+}
+
+/* This is a helper to stop the wrap */
+.clear-float {
+  clear: both;
 }
