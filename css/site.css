@@ -28,11 +28,7 @@ a:hover, a:focus { text-decoration: underline; }
 .section { padding: 2.5rem var(--pad); }
 .center { text-align: center; }
 
-/* NEW: A section with a subtle background to pop */
-.feature-block {
-  background: var(--bihs-sky);
-  padding: 0.5rem var(--pad); /* Gives it some breathing room */
-}
+
 
 /* 4) Typography */
 h1,h2,h3,h4 { line-height: 1.25; margin: 0 0 .75rem; font-weight: 700; color: var(--bihs-navy-900); }
@@ -200,19 +196,8 @@ main .container > *:last-child { margin-bottom: 0; }
 .grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
 @media (max-width: 800px){ .grid.two, .grid.three { grid-template-columns: 1fr; } }
 
-/*
-  Styles for the Mission/Vision block
-*/
-.feature-block {
-  background: var(--bihs-sky); /* This is your light blue color */
-  padding: 2.5rem var(--pad); /* This adds spacing */
-}
-/*
-  Improves spacing in the Mission/Vision block
-*/
-.feature-block h2 {
-  margin-bottom: 1rem;
-}
+
+
 /* 10) Footer Social Icons */
 .site-footer .social-nav {
   justify-content: center; /* Center the icons */
@@ -340,12 +325,7 @@ main .container > *:last-child { margin-bottom: 0; }
 .article-speaker-img {
   display: none;
 }
-/* 16) Add "Breathing Room" to all pages */
-.feature-block,
-.summary-block {
-  padding-top: 4.5rem; 
-  padding-bottom: 4.5rem;
-}
+
 .more-articles-link {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
@@ -493,16 +473,6 @@ article-card-grid {
 .card-content .btn {
   margin-top: auto; /* Pushes the button to the bottom */
 }
-/* =================================== */
-/* Tighter Page Headers (2025-11-11)   */
-/* =================================== */
-
-/* This rule overrides the "Global Modern Spacing"
-   and makes your light-blue title sections shorter. */
-.feature-block {
-  padding-top: 2.5rem; 
-  padding-bottom: 2.5rem;
-}
 
 /* =================================== */
 /* Modern "Fat Footer" Styles          */
@@ -598,4 +568,24 @@ article-card-grid {
   width: 100%;          /* Fit the container width */
   object-fit: contain;  /* THIS IS THE FIX: Show the whole image */
   box-shadow: none;     /* Removes the shadow, which can look odd on a book */
+}
+
+/*
+  Improves spacing in the Mission/Vision block
+*/
+.feature-block h2 {
+  margin-bottom: 1rem;
+}
+/* --- Light-Blue Title Sections --- */
+/* This is the short padding you want */
+.feature-block {
+  background: var(--bihs-sky);
+  padding: 2.5rem var(--pad); 
+}
+
+/* --- White Content Sections --- */
+/* This is the tall, modern padding */
+.summary-block {
+  background: #fff;
+  padding: 2.5rem var(--pad); 
 }
