@@ -589,3 +589,13 @@ article-card-grid {
   background: #fff;
   padding: 2.5rem var(--pad); 
 }
+/* =================================== */
+/* FIX: Course Page Image (No Crop)    */
+/* =================================== */
+
+/* This rule ONLY targets the image on the courses page */
+#courses-page .summary-image img {
+  height: auto; /* Lets the height be natural */
+  object-fit: contain; /* Shows the full image, no cropping */
+  box-shadow: none; /* Looks better without a shadow */
+}
