@@ -598,3 +598,11 @@ h1, h2 {
 .card-content .btn {
   margin-top: auto; /* Pushes the button to the bottom */
 }
+/* =================================== */
+/* FIX: Course Page Image (No Crop)    */
+/* =================================== */
+#courses-page .summary-image img { /* <-- THIS LINE HAS A TYPO */
+  height: auto;
+  object-fit: contain;
+  box-shadow: none;
+}
