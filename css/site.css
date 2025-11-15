@@ -606,3 +606,35 @@ h1, h2 {
   object-fit: contain;
   box-shadow: none;
 }
+/* =================================== */
+/* Team Profile Card Styles            */
+/* =================================== */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.profile-card {
+  text-align: center; /* Centers the text and image */
+}
+.profile-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; /* This makes the image round */
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+.profile-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--bihs-navy-900);
+  margin-bottom: 0.25rem;
+}
+.profile-card p {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 0;
+}
