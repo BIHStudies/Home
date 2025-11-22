@@ -196,6 +196,7 @@ main .container > *:last-child { margin-bottom: 0; }
 /* ➜ ADD THIS FOR FOUR COLUMNS */
 .grid.four { grid-template-columns: repeat(4, minmax(0,1fr)); }
 
+
 /* ➜ UPDATE media query to collapse both three and four */
 @media (max-width: 800px){
   .grid.two, .grid.three, .grid.four { grid-template-columns: 1fr; }
