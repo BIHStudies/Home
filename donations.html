@@ -204,84 +204,65 @@
     </a>
   </div>
 
-  <!-- Card 3: Give Any Amount -->
-  <div class="donate-box">
-    <img src="img/any_amount.jpg" alt="Give Any Amount" style="width:100%; border-radius:8px; margin-bottom:14px;">
-    <h2>Give Any Amount</h2>
-    <p>
-      Support BIHS in whatever way feels meaningful for you. One-time and custom gifts help 
-      sustain the library, research, publications, and ongoing programs.
-    </p>
-    <a href="https://www.paypal.com/donate/?hosted_button_id=HNVKEBZTFEEQ4"
-       class="opt" style="margin-top:12px;">
-       Make a Gift
+<!-- Card 3: Give Any Amount -->
+<div class="donate-box">
+  <img src="img/any_amount.jpg" alt="Give Any Amount" style="width:100%; border-radius:8px; margin-bottom:14px;">
+  <h2>Give Any Amount</h2>
+  <p>
+    Support BIHS in whatever way feels meaningful for you. One-time and custom gifts help 
+    sustain our library, research, publications, and ongoing programs.
+  </p>
+
+  <!-- Payment Options INSIDE the card -->
+  <div class="donate-options" style="margin-top:20px;">
+    
+    <!-- Credit Card (Raisely opens inline) -->
+    <button class="opt" onclick="openPanel('raisely')" style="font-size:16px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Raisely_Icon.svg/48px-Raisely_Icon.svg.png" alt="">
+      Credit Card
+    </button>
+
+    <!-- PayPal -->
+    <a class="opt" href="https://www.paypal.com/donate/?hosted_button_id=HNVKEBZTFEEQ4" 
+       target="_blank" rel="noopener" style="font-size:16px;">
+      <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="">
+      PayPal
     </a>
+
+    <!-- UPI (India) -->
+    <button class="opt" onclick="openPanel('upi')" style="font-size:16px;">
+      <img src="https://static.tildacdn.com/tild3236-6565-4537-b334-643966393536/UPI-logo.png" alt="">
+      UPI (India)
+    </button>
   </div>
 
-</div>
-<!-- END 3 Donation Campaigns Section -->
-
-
-
-      
-    <div class="raisely-donate" data-campaign-path="help-bihs-thrive" data-profile="" data-width="100%" data-height="800"><script src="https://cdn.raisely.com/v3/public/embed.js"></script>
-    </div>   
+  <!-- Panels INSIDE card 3 -->
+  <div id="panel-raisely" class="panel">
+    <div class="card">
+      <h3>Donate with Credit Card (via Raisely)</h3>
+      <div class="raisely-donate"
+           data-campaign-path="bhaktivedanta-institute-for-higher-studies-support"
+           data-profile=""
+           data-width="100%"
+           data-height="800">
+        <script src="https://cdn.raisely.com/v3/public/embed.js"></script>
+      </div>
+    </div>
   </div>
 
-    </section>
-        <section>
-          <div class="donate-options">
-            <!-- Raisely expands inline -->
-            <button class="opt" onclick="openPanel('raisely')">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Raisely_Icon.svg/48px-Raisely_Icon.svg.png" alt="">
-              Credit Card
-            </button>
+  <div id="panel-upi" class="panel">
+    <div class="card">
+      <h3>Donate with UPI</h3>
+      <p>Scan this QR code with your UPI app:</p>
+      <div class="qr">
+        <img src="https://static.tildacdn.com/tild6464-3635-4362-b763-383832613835/UPI-QR.jpg" alt="UPI QR Code">
+      </div>
+      <p><strong>UPI ID:</strong> Vyapar.172927995911@hdfcbank</p>
+    </div>
+  </div>
 
-            <!-- PayPal opens directly -->
-            <a class="opt" href="https://www.paypal.com/donate/?hosted_button_id=HNVKEBZTFEEQ4" target="_blank" rel="noopener">
-              <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="">
-              PayPal
-            </a>
 
-            <!-- UPI expands inline -->
-            <button class="opt" onclick="openPanel('upi')">
-              <img src="https://static.tildacdn.com/tild3236-6565-4537-b334-643966393536/UPI-logo.png" alt="">
-              UPI (India)
-            </button>
-          </div>
 
-          <!-- Panels -->
-          
-          <div id="panel-raisely" class="panel">
-            <div class="card">
-             
-              <h3>Donate with Credit Card (via Raisely)</h3>
-              <div class="raisely-donate"
-                   data-campaign-path="bhaktivedanta-institute-for-higher-studies-support"
-                   data-profile=""
-                   data-width="100%"
-                   data-height="800">
-                <!-- This script MUST be here for Raisely to work -->
-                <script src="https://cdn.raisely.com/v3/public/embed.js"></script>
-              </div>
-              <noscript>
-                <div class="iframe-wrap">
-                  <iframe src="https://bhaktivedanta-institute-for-higher-studies-support.raiselysite.com/donate" loading="lazy"></iframe>
-                </div>
-              </noscript>
-            </div>
-          </div>
-
-          <div id="panel-upi" class="panel">
-            <div class="card">
-              <h3>Donate with UPI</h3>
-              <p>Scan this QR code with your UPI app:</p>
-              <div class="qr">
-                <img src="https://static.tildacdn.com/tild6464-3635-4362-b763-383832613835/UPI-QR.jpg" alt="UPI QR Code">
-              </div>
-              <p><strong>UPI ID:</strong> Vyapar.172927995911@hdfcbank</p>
-            </div>
-          </div>
         </div> <!-- End right column -->
       </div> <!-- End donate-grid -->
     </section>
