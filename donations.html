@@ -8,15 +8,10 @@
   <link rel="stylesheet" href="css/site.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-  <!-- 
-    DONATION-SPECIFIC STYLES
-    This CSS is only for this page. I have adapted it to 
-    use your site's fonts, colors, and modern style.
-  -->
+  <!-- DONATION-SPECIFIC STYLES -->
   <style>
-    /* Use the border-radius from our modern CSS */
     :root {
-      --radius: 8px; 
+      --radius: 8px;
     }
 
     .donate-grid{
@@ -28,38 +23,50 @@
     @media(min-width:900px){
       .donate-grid{grid-template-columns:1.3fr 1fr;align-items:start}
     }
-    
-    /* Card styles */
+
     .intro-card, .donate-box {
-      background:#fff; 
+      background:#fff;
       color: var(--text);
       border-radius:var(--radius);
       padding:26px;
-      /* Use the modern shadow we added to site.css */
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       border: 1px solid #e6ebf3;
     }
     .intro-card h2{margin:0 0 8px;font-size:clamp(22px,3vw,30px);color:var(--bihs-navy-900)}
     .intro-card h3{margin:8px 0 14px;font-size:clamp(18px,2.8vw,22px);color:var(--bihs-navy);font-weight:700}
     .intro-card p{margin:0 0 14px;line-height:1.65}
-    
-    .donate-box h2{margin:0 0 18px;font-size:24px;color:var(--bihs-navy-900);text-align:center}
+
+    .donate-box h2{
+      margin:0 0 18px;
+      font-size:22px;
+      color:var(--bihs-navy-900);
+      text-align:center;
+    }
+
+    .donation-cards{
+      max-width:1200px;
+      margin:0 auto 40px;
+      display:grid;
+      gap:24px;
+    }
+    @media (min-width:900px){
+      .donation-cards{
+        grid-template-columns:repeat(3, minmax(0,1fr));
+      }
+    }
+
     .donate-options{display:grid;gap:14px}
 
-    /* ADAPTED BUTTONS:
-      Using your new light-blue button style
-    */
     .opt, .opt:link, .opt:visited, .opt:hover, .opt:active,
     button.opt, button.opt:hover {
-      all: unset; /* Resets button styles */
+      all: unset;
       display:flex;
       align-items:center;
       justify-content:center;
-      text-align: center;
+      text-align:center;
       gap:12px;
       padding:16px;
       border-radius:var(--radius);
-      /* This is your light blue button style */
       background: var(--bihs-sky);
       color: var(--bihs-navy-900) !important;
       font-weight:700;
@@ -75,7 +82,6 @@
     }
     .opt img{height:22px;width:auto;opacity:.9}
 
-    /* Panel styles */
     .panel{display:none;margin-top:20px}
     .card{background:#fff;color:#000;border-radius:14px;padding:20px;border:1px solid #e6ebf3}
     .iframe-wrap{position:relative;width:100%;height:700px;overflow:hidden;border:1px solid #e6ebf3;border-radius:12px;background:#fafafa}
@@ -85,231 +91,184 @@
   </style>
 </head>
 <body>
-  
+
   <div id="header"></div>
 
-  <main> 
-    <!-- Standard Page Title -->
+  <main>
+
+    <!-- Page Title & Short Intro -->
     <section class="feature-block center">
       <div class="container">
         <h1>Support Our Work</h1>
-        <p class="lead">Fueling the Frontiers of Science and Philosophy The Bhaktivedanta Institute for Higher Studies is more than a research center — it is a sanctuary where science and philosophy meet to explore the deepest questions: What is consciousness? Where did life come from? Is there purpose behind the universe? Our scholars are breaking barriers, bringing modern research into dialogue with the timeless wisdom of the Śrīmad-Bhāgavatam. Your gift empowers the minds — and hearts — that will shape science and metaphysics for generations to come.</div>
-   </p>
+        <p class="lead">
+          The Bhaktivedanta Institute for Higher Studies is more than a research center — 
+          it is a sanctuary where science and philosophy meet to explore the deepest questions:
+          What is consciousness? Where did life come from? Is there purpose behind the universe?
+          Your gift empowers scholars, students, and seekers who are working to bring these
+          conversations to the wider world.
+        </p>
       </div>
     </section>
 
-  <!-- 3 MAIN DONATION OPTIONS -->
-<div class="donation-cards" style="display:grid; gap:24px; margin-bottom:32px;">
-  
-  <!-- OPTION 1: $25 SUPPORT CIRCLE -->
-  <div class="donate-box">
-    <img src="img/25Circle.2.jpg"
-         alt="BIHS Support Circle"
-         style="width:10%; border-radius:8px; margin-bottom:14px;">
-    
-    <h2>BIHS Support Circle — $25/Month</h2>
-    <p>
-      Small, steady contributions make a big difference. With <strong>$25 a month</strong>,
-      you help BIHS offer courses, public programs, research initiatives, and accessible
-      learning rooted in science and philosophy.
-    </p>
-    <p>
-      The Support Circle is for anyone who wants to help sustain this mission—even if
-      they feel they can’t do much. Your monthly commitment builds the foundation that
-      allows BIHS to teach, inspire, and serve a growing community of thoughtful learners.
-    </p>
+    <!-- THREE MAIN DONATION OPTIONS -->
+    <section class="summary-block">
+      <div class="donation-cards">
 
-    <!-- Raisely embed for the $25 campaign -->
-    <div class="raisely-donate" data-campaign-path="support-circle" 
-      data-profile="" data-width="100%" 
-      data-height="800">
-      <script src="https://cdn.raisely.com/v3/public/embed.js"></script></div>
-  </div>
+        <!-- OPTION 1: $25 SUPPORT CIRCLE -->
+        <div class="donate-box">
+          <img src="img/support-circle-25.jpg"
+               alt="BIHS Support Circle"
+               style="width:100%; border-radius:8px; margin-bottom:14px;">
 
-  <!-- OPTION 2: 108 EDUCATION STEWARD CIRCLE -->
-  <div class="donate-box">
-    <img src="img/108v2.jpg"
-         alt="108 Education Steward Circle"
-         style="width:10%; border-radius:8px; margin-bottom:14px;">
+          <h2>BIHS Support Circle — $25/Month</h2>
+          <p>
+            Small, steady contributions make a big difference. With <strong>$25 a month</strong>,
+            you help BIHS offer courses, public programs, research initiatives, and accessible
+            learning rooted in science and philosophy.
+          </p>
+          <p>
+            The Support Circle is for anyone who wants to help sustain this mission—even if
+            they feel they can’t do much. Your monthly commitment builds the foundation that
+            allows BIHS to teach, inspire, and serve a growing community of thoughtful learners.
+          </p>
 
-    <h2>108 Education Steward Circle — $108/Month</h2>
-    <p>
-      A monthly offering of <strong>$108</strong> supports BIHS courses and provides
-      study opportunities for sincere learners. As an Education Steward, you help
-      develop curriculum, sustain teachers, and expand our Canvas-based learning
-      programs.
-    </p>
-    <p>
-      Your contribution directly strengthens BIHS education and helps students receive
-      structured guidance and Certificates of Completion.
-    </p>
+          <div class="raisely-donate" 
+            data-campaign-path="support-circle" 
+            data-profile="" 
+            data-width="100%" 
+            data-height="800">
+            <script src="https://cdn.raisely.com/v3/public/embed.js"></script></div>
+        </div>
 
-    <!-- Raisely embed for the $108 campaign -->
-     <div class="raisely-donate"
-         data-campaign-path="bihs-education-steward-108"
-         data-profile=""
-         data-width="100%"
-         data-height="600">
-    <script src="https://cdn.raisely.com/v3/public/embed.js"></script>
-    </div>
-  </div>
+        <!-- OPTION 2: 108 EDUCATION STEWARD CIRCLE -->
+        <div class="donate-box">
+          <img src="img/education-steward-108.jpg"
+               alt="108 Education Steward Circle"
+               style="width:100%; border-radius:8px; margin-bottom:14px;">
 
-  <!-- OPTION 3: GIVE ANY AMOUNT -->
-  <div class="donate-box">
-    <img src="img/BIHS.Thrive.jpg"
-         alt="Give Any Amount"
-         style="width:10%; border-radius:8px; margin-bottom:14px;">
+          <h2>108 Education Steward Circle — $108/Month</h2>
+          <p>
+            A monthly offering of <strong>$108</strong> supports BIHS courses and provides
+            study opportunities for sincere learners. As an Education Steward, you help
+            develop curriculum, sustain teachers, and expand our Canvas-based learning
+            programs.
+          </p>
+          <p>
+            Your contribution directly strengthens BIHS education and helps students receive
+            structured guidance and Certificates of Completion.
+          </p>
 
-    <h2>Give Any Amount</h2>
-    <p>
-      Support BIHS in whatever way feels meaningful for you. One-time and custom gifts
-      help sustain our library, research, events, publications, and ongoing programs.
-    </p>
-    <p>
-      Every contribution—large or small—helps BIHS continue offering thoughtful,
-      accessible resources for those exploring consciousness, science, and philosophy.
-    </p>
+          <div class="raisely-donate" data-campaign-path="help-bihs-thrive" 
+            data-profile=""
+            data-width="100%" 
+            data-height="800">
+            <script src="https://cdn.raisely.com/v3/public/embed.js"></script></div>
+        </div>
 
-    <!-- Raisely embed for flexible / one-time gifts -->
-      <div class="raisely-donate"
-         data-campaign-path="bihs-general-donations"
-         data-profile=""
-         data-width="100%"
-         data-height="600">
-      <script src="https://cdn.raisely.com/v3/public/embed.js"></script>
-    </div>
-  </div>
+        <!-- OPTION 3: GIVE ANY AMOUNT -->
+        <div class="donate-box">
+          <img src="img/give-any-amount.jpg"
+               alt="Give Any Amount"
+               style="width:100%; border-radius:8px; margin-bottom:14px;">
 
-</div>
-<!-- END 3 MAIN DONATION OPTIONS -->
+          <h2>Give Any Amount</h2>
+          <p>
+            Support BIHS in whatever way feels meaningful for you. One-time and custom gifts
+            help sustain our library, research, events, publications, and ongoing programs.
+          </p>
+          <p>
+            Every contribution—large or small—helps BIHS continue offering thoughtful,
+            accessible resources for those exploring consciousness, science, and philosophy.
+          </p>
 
+          <div class="raisely-donate" 
+            data-campaign-path="bhaktivedanta-institute-for-higher-studies-support"
+            data-profile=""
+            data-width="100%" 
+            data-height="800">
+            <script src="https://cdn.raisely.com/v3/public/embed.js"></script></div>
+        </div>
 
-
-   <h1> Delete after this most of it </h1> 
-   <!-- RIGHT COLUMN: Donate options -->
-   <h1> Delete after this most of it </h1> 
-   <h1> Delete after this most of it </h1> 
-
-       <h1> Delete after this most of it </h1> 
-    <div class="donate-box">
-
-
-<!-- 3 Donation Campaigns Section -->
-<div class="donation-cards" style="display:grid; gap:26px; margin-bottom:40px;">
-
-  <!-- Card 1: BIHS Support Circle $25 -->
-  <div class="donate-box">
-    <img src="img/25Circle.2.jpg" alt="Support Circle" style="width:30%; border-radius:8px; margin-bottom:14px;">
-    <h2>BIHS Support Circle — $25/Month</h2>
-    <p>
-      Small, steady contributions make a big difference. With <strong>$25 a month</strong>, 
-      you help BIHS offer courses, programs, research, and accessible learning rooted in 
-      science and philosophy.
-    </p>
-    <p>
-      If you wish to deepen your impact, inviting <strong>five friends</strong> creates a 
-      BIHS Support Circle +5 — a simple, powerful ripple of support.
-    </p>
-    <div class="raisely-donate" 
-      data-campaign-path="support-circle" 
-      data-profile="" data-width="100%" 
-      data-height="800">
-      <script src="https://cdn.raisely.com/v3/public/embed.js"></script></div> 
-    </a>
-  </div>
-
-  <!-- Card 2: Student Scholarship Circle $108 -->
-  <div class="donate-box">
-    <img src="img/108v2.jpg" alt="Scholarship Circle" style="width:100%; border-radius:8px; margin-bottom:14px;">
-    <h2>Student Scholarship Circle — $108/Month</h2>
-    <p>
-      A monthly offering of <strong>$108</strong> provides <strong>three full scholarships</strong> 
-      for BIHS students to take all our courses during 2026.  
-    </p>
-    <p>
-      Your contribution directly opens doors to structured learning and BIHS Certificates 
-      of Completion.
-    </p>
-    <a href="https://www.paypal.com/donate/?hosted_button_id=HNVKEBZTFEEQ4"
-       class="opt" style="margin-top:12px;">
-       Sponsor Students
-    </a>
-  </div>
-
-<!-- Card 3: Give Any Amount -->
-<div class="donate-box">
-  <img src="img/BIHS.Thrive.jpg" alt="Give Any Amount" style="width:100%; border-radius:8px; margin-bottom:14px;">
-  <h2>Give Any Amount</h2>
-  <p>
-    Support BIHS in whatever way feels meaningful for you. One-time and custom gifts help 
-    sustain our library, research, publications, and ongoing programs.
-  </p>
-
-  <!-- Payment Options INSIDE the card -->
-  <div class="donate-options" style="margin-top:20px;">
-    
-    <!-- Credit Card (Raisely opens inline) -->
-    <button class="opt" onclick="openPanel('raisely')" style="font-size:16px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Raisely_Icon.svg/48px-Raisely_Icon.svg.png" alt="">
-      Credit Card
-    </button>
-
-    <!-- PayPal -->
-    <a class="opt" href="https://www.paypal.com/donate/?hosted_button_id=HNVKEBZTFEEQ4" 
-       target="_blank" rel="noopener" style="font-size:16px;">
-      <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="">
-      PayPal
-    </a>
-
-    <!-- UPI (India) -->
-    <button class="opt" onclick="openPanel('upi')" style="font-size:16px;">
-      <img src="https://static.tildacdn.com/tild3236-6565-4537-b334-643966393536/UPI-logo.png" alt="">
-      UPI (India)
-    </button>
-  </div>
-
-  <!-- Panels INSIDE card 3 -->
-  <div id="panel-raisely" class="panel">
-    <div class="card">
-      <h3>Donate with Credit Card (via Raisely)</h3>
-     <div class="raisely-donate" 
-       data-campaign-path="bhaktivedanta-institute-for-higher-studies-support"
-       data-profile="" data-width="100%" 
-       data-height="800">
-       <script src="https://cdn.raisely.com/v3/public/embed.js"></script></div>
-    </div>
-  </div>
-
-  <div id="panel-upi" class="panel">
-    <div class="card">
-      <h3>Donate with UPI</h3>
-      <p>Scan this QR code with your UPI app:</p>
-      <div class="qr">
-        <img src="https://static.tildacdn.com/tild6464-3635-4362-b763-383832613835/UPI-QR.jpg" alt="UPI QR Code">
       </div>
-      <p><strong>UPI ID:</strong> Vyapar.172927995911@hdfcbank</p>
-    </div>
-  </div>
+    </section>
 
+    <!-- OTHER PAYMENT METHODS -->
+    <section class="summary-block">
+      <div class="container">
+        <h2 style="text-align:center; margin-bottom:18px;">Other Ways to Give</h2>
+        <p style="text-align:center; max-width:700px; margin:0 auto 20px;">
+          If you prefer, you can also support BIHS using PayPal, UPI (India), or Zelle.
+        </p>
 
+        <div class="donate-options" style="max-width:600px; margin:0 auto;">
 
-        </div> <!-- End right column -->
-      </div> <!-- End donate-grid -->
+          <!-- PayPal -->
+          <a class="opt"
+             href="https://www.paypal.com/donate/?hosted_button_id=HNVKEBZTFEEQ4"
+             target="_blank" rel="noopener">
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="">
+            PayPal
+          </a>
+
+          <!-- Credit Card via Raisely (generic) -->
+          <button class="opt" onclick="openPanel('raisely')">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Raisely_Icon.svg/48px-Raisely_Icon.svg.png" alt="">
+            Credit Card (alternative form)
+          </button>
+
+          <!-- UPI (India) -->
+          <button class="opt" onclick="openPanel('upi')">
+            <img src="https://static.tildacdn.com/tild3236-6565-4537-b334-643966393536/UPI-logo.png" alt="">
+            UPI (India)
+          </button>
+
+        </div>
+
+        <!-- Hidden Panels for Raisely + UPI -->
+        <div id="panel-raisely" class="panel">
+          <div class="card">
+            <h3>Donate with Credit Card (via Raisely)</h3>
+            <div class="raisely-donate"
+                 data-campaign-path="bhaktivedanta-institute-for-higher-studies-support"
+                 data-profile=""
+                 data-width="100%"
+                 data-height="800">
+              <script src="https://cdn.raisely.com/v3/public/embed.js"></script>
+            </div>
+          </div>
+        </div>
+
+        <div id="panel-upi" class="panel">
+          <div class="card">
+            <h3>Donate with UPI</h3>
+            <p>Scan this QR code with your UPI app:</p>
+            <div class="qr">
+              <img src="https://static.tildacdn.com/tild6464-3635-4362-b763-383832613835/UPI-QR.jpg" alt="UPI QR Code">
+            </div>
+            <p><strong>UPI ID:</strong> Vyapar.172927995911@hdfcbank</p>
+          </div>
+        </div>
+
+        <!-- You can add Zelle instructions here if you like -->
+        <!-- <p style="text-align:center; margin-top:16px;">Zelle: ...</p> -->
+
+      </div>
     </section>
 
   </main>
-  
+
   <div id="footer"></div>
 
-  <!-- Main site script -->
   <script src="js/site.js"></script>
-  
-  <!-- Inline script for this page -->
+
   <script>
     function openPanel(which){
       document.querySelectorAll('.panel').forEach(p => p.style.display='none');
       const el = document.getElementById('panel-'+which);
-      if(el){ el.style.display='block'; el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      if(el){
+        el.style.display='block';
+        el.scrollIntoView({behavior:'smooth', block:'start'});
+      }
     }
   </script>
 </body>
