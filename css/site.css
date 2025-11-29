@@ -648,3 +648,109 @@ h1, h2 {
   margin-left: auto;   /* <-- ADD THIS LINE */
   margin-right: auto;  /* <-- ADD THIS LINE */
 }
+
+
+.course-brochure {
+  padding: 3rem 1.5rem;
+  background: #ffffff;
+}
+
+.course-brochure .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.course-brochure-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.course-brochure-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: var(--bihs-navy);
+}
+
+.course-brochure-header h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.course-brochure-header .course-subtitle {
+  font-style: italic;
+  color: #4b5563;
+}
+
+.course-section {
+  margin-bottom: 2rem;
+}
+
+.course-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--bihs-navy);
+}
+
+.course-section h4 {
+  font-size: 1.05rem;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.course-section p {
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.course-section ul {
+  padding-left: 1.2rem;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.course-section ul li {
+  margin-bottom: 0.35rem;
+}
+
+.course-unit {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.course-unit h4 span {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.course-faculty {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.course-brochure-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.course-brochure-footer a {
+  color: var(--bihs-navy);
+  text-decoration: none;
+}
+
+.course-brochure-footer a:hover {
+  text-decoration: underline;
+}
+
+.course-brochure-footer .course-tagline {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
