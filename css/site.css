@@ -778,5 +778,91 @@ h1, h2 {
   gap: 16px;
   flex-wrap: wrap;
 }
+/* ========================================= */
+/* NEW HERO BANNER (Bold Minds Page)         */
+/* ========================================= */
 
+.hero-banner {
+  position: relative;
+  /* Deep Blue Background matching the flyer */
+  background-color: #0b1a2b; 
+  /* A glow in the center to mimic the light in your flyer */
+  background-image: radial-gradient(circle at center, #1e4570 0%, #02111f 80%);
+  color: #ffffff;
+  padding: 5rem 1.5rem; /* Tall and spacious */
+  text-align: center;
+  overflow: hidden;
+}
+
+/* This creates a subtle "star/network" grid pattern automatically */
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.15;
+  background-image: radial-gradient(#ffffff 1.5px, transparent 1.5px);
+  background-size: 40px 40px; /* Spacing of the 'stars' */
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Keeps text on top */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* The Main Title (Gold & Serif) */
+.hero-content h1 {
+  font-family: Georgia, "Times New Roman", serif; 
+  font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive giant text */
+  color: #eebb4d; /* GOLD color from flyer */
+  margin-bottom: 0.5rem;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+/* The Subtitle */
+.hero-content h2 {
+  font-family: system-ui, sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 300;
+  color: #e9f2ff; /* Very light blue */
+  margin-bottom: 1.5rem;
+}
+
+.hero-content .course-subtitle {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+
+/* The New 'Enroll' Button Style */
+.btn-hero {
+  display: inline-block;
+  background-color: #eebb4d; /* Gold */
+  color: #001f3f; /* Navy text */
+  font-weight: 800;
+  padding: 1rem 2.5rem;
+  border-radius: 50px; /* Pill shape */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-hero:hover {
+  transform: translateY(-3px); /* Moves up slightly on hover */
+  background-color: #f0c565; /* Lighter gold */
+  box-shadow: 0 10px 25px rgba(238, 187, 77, 0.4); /* Gold Glow */
+  text-decoration: none;
+}
+
+.hero-date {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  font-weight: 500;
+}
 
