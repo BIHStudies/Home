@@ -953,3 +953,22 @@ h1, h2 {
   font-weight: 400;
   text-transform: uppercase;
 }
+/* ========================================= */
+/* FIXES: Spacing & 3-Column Layout          */
+/* ========================================= */
+
+/* 1. Reduce the gap between Hero and Content */
+.hero-banner {
+  padding-bottom: 2rem !important; /* Reduced from 5rem */
+}
+.course-at-a-glance {
+  padding-top: 2rem !important; /* pulls content up */
+}
+
+/* 2. Force 3 Cards on one line for Computers */
+@media (min-width: 900px) {
+  .course-details-grid {
+    /* This forces exactly 3 equal columns on wide screens */
+    grid-template-columns: repeat(3, 1fr) !important; 
+  }
+}
