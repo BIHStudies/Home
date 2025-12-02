@@ -866,3 +866,90 @@ h1, h2 {
   font-weight: 500;
 }
 
+/* ========================================= */
+/* COURSE DETAILS GRID (Format/Schedule)     */
+/* ========================================= */
+
+.course-details-grid {
+  display: grid;
+  /* Auto-fit creates columns that stack automatically on mobile */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.detail-card {
+  background: #f8fbff; /* Very light blue/white */
+  border: 1px solid #e1eaf7;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-color: #cce0ff;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: var(--bihs-navy); /* Uses your navy variable */
+  margin-bottom: 1rem;
+}
+
+.detail-card h4 {
+  color: var(--bihs-navy-900);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eebb4d; /* Gold underline */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.detail-card ul {
+  list-style: none; /* Remove standard bullets */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Keep text readable */
+}
+
+.detail-card ul li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Custom Gold Bullet Points */
+.detail-card ul li::before {
+  content: "•";
+  color: #eebb4d; /* Gold */
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+/* Price Styling */
+.price-tag {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--bihs-navy);
+}
+.price-tag-small {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #5a6a7a;
+  margin-top: 0.5rem;
+}
+.price-sub {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 400;
+  text-transform: uppercase;
+}
