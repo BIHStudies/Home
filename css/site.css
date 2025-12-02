@@ -798,7 +798,7 @@ h1, h2 {
 .hero-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  opacity: 0.15;
+  opacity: 0.05;
   background-image: radial-gradient(#ffffff 1.5px, transparent 1.5px);
   background-size: 40px 40px; /* Spacing of the 'stars' */
   pointer-events: none;
