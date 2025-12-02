@@ -754,3 +754,33 @@ h1, h2 {
   margin-top: 0.5rem;
   font-style: italic;
 }
+.enroll-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-enroll {
+  background: var(--bihs-navy);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* 📱 Mobile-friendly layout */
+@media (max-width: 700px) {
+  .enroll-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-enroll {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
