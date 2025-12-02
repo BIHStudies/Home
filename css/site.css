@@ -972,3 +972,34 @@ h1, h2 {
     grid-template-columns: repeat(3, 1fr) !important; 
   }
 }
+/* ========================================= */
+/* FIX: Gap & False Bottom                   */
+/* ========================================= */
+
+/* 1. Tighten the space */
+.hero-banner {
+  padding-bottom: 1.5rem !important; /* Shorter blue section */
+}
+
+.course-at-a-glance {
+  padding-top: 2rem !important; /* Pulls the white section up */
+}
+
+/* Remove extra top margin from the "Course At a Glance" title */
+.course-at-a-glance h3 {
+  margin-top: 0 !important;
+}
+
+/* 2. Bouncing Scroll Arrow */
+.scroll-indicator {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6); /* Faded white */
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
