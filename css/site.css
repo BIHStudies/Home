@@ -779,59 +779,56 @@ h1, h2 {
   flex-wrap: wrap;
 }
 /* ========================================= */
-/* NEW HERO BANNER (Bold Minds Page)         */
+/* HERO BANNER (With Background Image)       */
 /* ========================================= */
 
 .hero-banner {
   position: relative;
-  /* Deep Blue Background matching the flyer */
-  background-color: #0b1a2b; 
-  /* A glow in the center to mimic the light in your flyer */
-  background-image: radial-gradient(circle at center, #1e4570 0%, #02111f 80%);
+  
+  /* 1. This creates the Dark Blue Overlay (85% opacity) */
+  /* Change 0.85 to 0.70 if you want the image brighter */
+  background-image: 
+    linear-gradient(rgba(11, 26, 43, 0.85), rgba(11, 26, 43, 0.85)),
+    url('../img/Bold Minds.jpeg'); 
+    
+  background-size: cover;   /* Ensures image covers the whole area */
+  background-position: center; /* Centers the lamp/book */
+  background-repeat: no-repeat;
+  
   color: #ffffff;
-  padding: 2.5rem 1.5rem; /* Tall and spacious */
+  padding: 4rem 1.5rem; /* Adjusted spacing */
   text-align: center;
   overflow: hidden;
 }
 
-/* This creates a subtle "star/network" grid pattern automatically */
-.hero-overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  opacity: 0.05;
-  background-image: radial-gradient(#ffffff 1.5px, transparent 1.5px);
-  background-size: 40px 40px; /* Spacing of the 'stars' */
-  pointer-events: none;
-}
-
+/* This adds a subtle glow behind the text to make it pop against the image */
 .hero-content {
   position: relative;
-  z-index: 2; /* Keeps text on top */
+  z-index: 2;
   max-width: 900px;
   margin: 0 auto;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8); /* Stronger shadow for readability */
 }
 
-/* The Main Title (Gold & Serif) */
+/* ... Keep the rest of your button styles the same ... */
 .hero-content h1 {
   font-family: Georgia, "Times New Roman", serif; 
-  font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive giant text */
-  color: #eebb4d; /* GOLD color from flyer */
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #eebb4d; /* Gold */
   margin-bottom: 0.5rem;
-  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
-/* The Subtitle */
 .hero-content h2 {
   font-family: system-ui, sans-serif;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   font-weight: 300;
-  color: #e9f2ff; /* Very light blue */
+  color: #e9f2ff;
   margin-bottom: 1.5rem;
 }
 
 .hero-content .course-subtitle {
   font-style: italic;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2.5rem;
   font-size: 1.2rem;
 }
@@ -839,11 +836,11 @@ h1, h2 {
 /* The New 'Enroll' Button Style */
 .btn-hero {
   display: inline-block;
-  background-color: #eebb4d; /* Gold */
-  color: #001f3f; /* Navy text */
+  background-color: #eebb4d; 
+  color: #001f3f; 
   font-weight: 800;
   padding: 1rem 2.5rem;
-  border-radius: 50px; /* Pill shape */
+  border-radius: 50px; 
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -852,10 +849,9 @@ h1, h2 {
 }
 
 .btn-hero:hover {
-  transform: translateY(-3px); /* Moves up slightly on hover */
-  background-color: #f0c565; /* Lighter gold */
-  box-shadow: 0 10px 25px rgba(238, 187, 77, 0.4); /* Gold Glow */
-  text-decoration: none;
+  transform: translateY(-3px); 
+  background-color: #f0c565; 
+  box-shadow: 0 10px 25px rgba(238, 187, 77, 0.4);
 }
 
 .hero-date {
@@ -865,7 +861,6 @@ h1, h2 {
   color: #cbd5e1;
   font-weight: 500;
 }
-
 /* ========================================= */
 /* COURSE DETAILS GRID (Format/Schedule)     */
 /* ========================================= */
