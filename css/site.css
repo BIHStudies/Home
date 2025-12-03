@@ -1087,3 +1087,101 @@ h1, h2 {
   margin-bottom: 0.5rem;
   color: #4b5563;
 }
+/* ========================================= */
+/* FACULTY CARDS (Hybrid + Blue Ring Look)   */
+/* ========================================= */
+
+.faculty-hybrid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hybrid-card {
+  position: relative; /* Needed for positioning the photo */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  border: 1px solid #e1eaf7;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Keeps corners neat */
+}
+
+/* The Colored Header Bar */
+.hybrid-header-pattern {
+  height: 80px; 
+  background: linear-gradient(135deg, var(--bihs-navy) 0%, #001f3f 100%);
+  width: 100%;
+}
+
+/* Gold Header for Unit 5 */
+.highlight-pattern {
+  background: linear-gradient(135deg, #c79a2b 0%, #a0781a 100%);
+}
+
+/* THE PHOTO STYLE (Round + Blue Ring) */
+.card-author-img {
+  position: absolute;
+  top: 35px; /* Positions it half-on/half-off the header */
+  left: 20px;
+  width: 90px;  /* Size of the circle */
+  height: 90px;
+  border-radius: 50%; /* Makes it perfectly round */
+  object-fit: cover;  /* Prevents stretching */
+  z-index: 2;
+  
+  /* THE FLYER TRICK: */
+  border: 4px solid #fff; /* The inner white gap */
+  box-shadow: 
+      0 0 0 4px var(--bihs-navy), /* The outer Blue Ring */
+      0 6px 12px rgba(0,0,0,0.15); /* Drop Shadow */
+}
+
+/* Content Area */
+.card-content {
+  padding: 20px;
+  padding-top: 55px; /* Extra space so text doesn't hit the photo */
+  flex-grow: 1;
+}
+
+.unit-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eebb4d; /* Gold */
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.highlight-badge {
+  color: var(--bihs-navy);
+}
+
+.hybrid-card h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--bihs-navy-900);
+}
+
+.faculty-name-sub {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #5a6a7a;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.hybrid-card ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.hybrid-card li {
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
