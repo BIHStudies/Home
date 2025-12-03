@@ -792,7 +792,7 @@ h1, h2 {
     url('../img/BoldMinds.jpeg'); 
     
   background-size: cover;   /* Ensures image covers the whole area */
-  background-position: center; /* Centers the lamp/book */
+  background-position: center top; /* Centers the lamp/book */
   background-repeat: no-repeat;
   
   color: #ffffff;
