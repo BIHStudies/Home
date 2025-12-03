@@ -861,6 +861,18 @@ h1, h2 {
   color: #cbd5e1;
   font-weight: 500;
 }
+
+/* ========================================= */
+/* FIX: Push text down ONLY on Computers     */
+/* ========================================= */
+
+@media (min-width: 1024px) {
+  .hero-banner {
+    /* Increases top space to 13rem on big screens */
+    /* You can change 13rem to 15rem if you need it even lower */
+    padding-top: 13rem !important; 
+  }
+}
 /* ========================================= */
 /* COURSE DETAILS GRID (Format/Schedule)     */
 /* ========================================= */
