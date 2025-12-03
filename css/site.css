@@ -788,7 +788,7 @@ h1, h2 {
   /* 1. This creates the Dark Blue Overlay (85% opacity) */
   /* Change 0.85 to 0.70 if you want the image brighter */
   background-image: 
-    linear-gradient(rgba(11, 26, 43, 0.85), rgba(11, 26, 43, 0.85)),
+    linear-gradient(rgba(11, 26, 43, 0.65), rgba(11, 26, 43, 0.85)),
     url('../img/BoldMinds.jpeg'); 
     
   background-size: cover;   /* Ensures image covers the whole area */
