@@ -796,7 +796,7 @@ h1, h2 {
   background-repeat: no-repeat;
   
   color: #ffffff;
-  padding: 4rem 1.5rem; /* Adjusted spacing */
+  padding: 9rem 1.5rem 3rem 1.5rem; /* Adjusted spacing */
   text-align: center;
   overflow: hidden;
 }
