@@ -883,6 +883,7 @@ h1, h2 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .detail-card {
