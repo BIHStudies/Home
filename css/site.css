@@ -789,7 +789,7 @@ h1, h2 {
   /* A glow in the center to mimic the light in your flyer */
   background-image: radial-gradient(circle at center, #1e4570 0%, #02111f 80%);
   color: #ffffff;
-  padding: 5rem 1.5rem; /* Tall and spacious */
+  padding: 2.5rem 1.5rem; /* Tall and spacious */
   text-align: center;
   overflow: hidden;
 }
