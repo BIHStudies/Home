@@ -813,14 +813,14 @@ h1, h2 {
 /* ... Keep the rest of your button styles the same ... */
 .hero-content h1 {
   font-family: Georgia, "Times New Roman", serif; 
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   color: #eebb4d; /* Gold */
   margin-bottom: 0.5rem;
 }
 
 .hero-content h2 {
   font-family: system-ui, sans-serif;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 300;
   color: #e9f2ff;
   margin-bottom: 1.5rem;
