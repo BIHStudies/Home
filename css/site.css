@@ -789,7 +789,7 @@ h1, h2 {
   /* Change 0.85 to 0.70 if you want the image brighter */
   background-image: 
     linear-gradient(rgba(11, 26, 43, 0.85), rgba(11, 26, 43, 0.85)),
-    url('../img/Bold Minds.jpeg'); 
+    url('../img/BoldMinds.jpeg'); 
     
   background-size: cover;   /* Ensures image covers the whole area */
   background-position: center; /* Centers the lamp/book */
