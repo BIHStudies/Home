@@ -1201,7 +1201,7 @@ h1, h2 {
 .library-hero {
   position: relative;
   /* Placeholder for your library photo - change filename later */
-  background-image: url('../img/library-bg.jpg'); 
+  background-image: url('../img/Library.jpg'); 
   background-size: cover;
   background-position: center;
   
