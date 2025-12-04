@@ -1292,7 +1292,17 @@ h1, h2 {
   color: #ffffff !important; /* Forces the title to be White */
   margin-top: 0;
 }
+/* 2. Force the Paragraph (P) in the header to be White */
+.plaque-header p {
+  color: rgba(255, 255, 255, 0.9) !important; /* Slightly softer white */
+  margin: 0;
+}
 
+/* 3. Force the Subtitles (H4) in the BODY to be Dark Brown */
+/* WARNING: Do not make these white, or they will vanish on the white background! */
+.plaque-section h4 {
+  color: #2c1a12 !important; 
+}
 .plaque-section {
   padding: 1rem 2rem;
   text-align: center;
