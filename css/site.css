@@ -1285,6 +1285,10 @@ h1, h2 {
   padding: 2rem;
   text-align: center;
   margin-bottom: 2rem;
+  .plaque-header h3 {
+  color: #ffffff !important; /* The !important overrides the global blue */
+  margin-top: 0;
+}
 }
 
 .plaque-section {
@@ -1294,7 +1298,7 @@ h1, h2 {
 
 .plaque-section h4 {
   font-family: Georgia, serif;
-  color: #ffffff;
+  color: #2c1a12;
   border-bottom: 1px solid #eebb4d;
   display: inline-block;
   padding-bottom: 5px;
