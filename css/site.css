@@ -1216,7 +1216,7 @@ h1, h2 {
 .library-hero-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(11, 26, 43, 0.7); /* Deep Navy, 70% opacity */
+  background: rgba(30, 20, 10, 0.75); /* dark brown , 75% opacity */
 }
 
 .library-hero-content {
@@ -1228,9 +1228,9 @@ h1, h2 {
 
 .library-hero h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
-  letter-spacing: 1px;
+ text-shadow: 0 2px 10 px rgba(0,0,0,0,5);
 }
 
 .library-hero p {
@@ -1257,4 +1257,62 @@ h1, h2 {
 .btn-library:hover {
   background: #fff;
   color: #0b1a2b; /* Navy */
+}
+
+/* 2. The Donor Plaque (Framed Wall Style) */
+.donor-plaque {
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 10px solid #2c1a12; /* Thick Dark Wood Frame */
+  border-radius: 4px;
+  outline: 2px solid #eebb4d; /* Inner Gold Line */
+  outline-offset: -12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  padding-bottom: 2rem;
+}
+
+.plaque-header {
+  background: #2c1a12; /* Dark Header */
+  color: #eebb4d; /* Gold Text */
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.plaque-section {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.plaque-section h4 {
+  font-family: Georgia, serif;
+  color: #2c1a12;
+  border-bottom: 1px solid #eebb4d;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.donor-row {
+  margin-bottom: 1.5rem;
+}
+
+.donor-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* 3. Simple Button for Catalogue */
+.btn-catalogue {
+  display: inline-block;
+  background: #eebb4d;
+  color: #0b1a2b;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 1.5rem;
 }
