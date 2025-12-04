@@ -1281,15 +1281,17 @@ h1, h2 {
 
 .plaque-header {
   background: #2c1a12; /* Dark Header */
-  color: #ffffff; /* Gold Text */
+  color: #ffffff; /* Text color */
   padding: 2rem;
   text-align: center;
   margin-bottom: 2rem;
-  .plaque-header h3 {
-  color: #ffffff !important; /* The !important overrides the global blue */
+} /* <--- This closing bracket was missing! */
+
+/* Now this rule stands on its own and will work: */
+.plaque-header h3 {
+  color: #ffffff !important; /* Forces the title to be White */
   margin-top: 0;
 }
-
 
 .plaque-section {
   padding: 1rem 2rem;
