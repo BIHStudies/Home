@@ -1242,6 +1242,12 @@ h1, h2 {
   font-family: serif;
 }
 
+.library-hero h2 {
+  font-size: 2rem;
+  color: #ffffff; /* white */
+  margin-bottom: 1.5rem;
+  font-family: serif;
+}
 /* A sophisticated, smaller button */
 .btn-library {
   display: inline-block;
