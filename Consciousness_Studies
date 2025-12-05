@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses | BIHS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore courses, workshops, and training from the Bhaktivedanta Institute for Higher Studies.">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+  
+  <div id="header"></div>
+
+  <main>
+    
+<!-- 1. PAGE TITLE -->
+<section class="hero-banner">
+  <div class="hero-overlay"></div> 
+  
+  <div class="container hero-content">
+    <h1>Consciousness Studies:<br> Ancient and Modern Perspectives</h1>
+    <h2>Communicating Timeless Wisdom in a Scientific Age</h2>
+    <p class="course-subtitle">
+      A 6-Month Training Series by the Bhaktivedanta Institute for Higher Studies
+    </p>
+    
+    <div class="hero-actions">
+       <a class="btn primary" href="https://square.link/u/e7OtuBOj" style="background: #eebb4d; color: #001f3f; border: none; padding: 15px 30px; font-weight: bold;">Enroll Now</a>
+    </div>
+
+  </div>
+</section>
+    <section class="section" style="background: #fff;">
+
+  <div class="container center" style="max-width: 900px;">
+
+    
+
+    <p style="font-size: 1.2rem; font-style: italic; color: #5a6a7a; margin-bottom: 2rem;">
+      "It will be a great contribution to human society if this authorized information from the Vedic literature is presented to the modern world on the basis of modern scientific understanding. 
+      The fact is already there. It simply has to be presented for modern understanding."
+    
+      <br><span style="font-size: 0.9rem; margin-top: 10px; display: block;"> — Srila Prabhupada Letter to: Dr. Bigelow January 20th 1971</span>
+
+    </p>
+
+
+    <h3>Empowering You With the Tools of Wisdom</h3>
+
+    <p class="lead">This course moves beyond sentiment to provide the intellectual machinery needed to fulfill this vision. You will gain:</p>
+
+
+
+    <div style="text-align: left; background: #f8fbff; padding: 2rem; border-radius: 12px; border: 1px solid #e1eaf7; margin-top: 2rem;">
+
+      <ul class="checklist-style">
+
+        <li style="margin-bottom: 1rem;"><strong>The Language of Science:</strong> Learn to articulate Bhāgavata philosophy using the vocabulary of modern physics, cosmology, and biology.</li>
+
+        <li style="margin-bottom: 1rem;"><strong>Logical Rigor:</strong> Master the philosophical arguments to dismantle materialism and the "blind evolution" narrative.</li>
+
+        <li style="margin-bottom: 1rem;"><strong>Cosmic Context:</strong> Move from a vague idea of the universe to a detailed understanding of Vedic Cosmology and its relation to modern theories.</li>
+
+     <li><strong>Mastery of Discourse: </strong>  Engage in high-level dialogue without hesitation, knowing you stand on a foundation of perfect logic and science.</li>
+      </ul>
+
+    </div>
+
+
+
+  </div>
+
+</section>
+
+    <!-- Purpose & Description -->
+  <section class="course-at-a-glance section">
+  <div class="container">
+    
+    <div class="center" style="max-width: 800px; margin: 0 auto 3rem;">
+      <h3>Course At a Glance</h3>
+      <p class="lead" style="font-size: 1.25rem; color: var(--bihs-navy-900);">
+        <strong>Purpose:</strong> To equip thoughtful Bhakti practitioners with the philosophical grounding and communication skills needed to speak clearly, confidently, and responsibly in modern scientific and intellectual settings.
+      </p>
+      <p>
+        <em>Consciousness Studies: Ancient and Modern Perspectives</em> is a university-style training series offered across two academic terms. Together we will explore core topics in consciousness, metaphysics, cosmology, and ethics, and learn how to express these ideas with clarity and integrity.
+      </p>
+    </div>
+
+    <div class="course-details-grid">
+      
+      <div class="detail-card">
+        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h4>Format</h4>
+        <ul>
+          <li>University-style training</li>
+          <li><strong>Saturdays 10:00 AM EST</strong></li>
+          <li>Live Zoom Sessions</li>
+          <li>Optional asynchronous study via Canvas</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-icon"><i class="fa-regular fa-calendar-check"></i></div>
+        <h4>Schedule</h4>
+        <ul>
+          <li><strong>Spring (16 wks):</strong> Jan 10 – May 2</li>
+          <li><strong>Summer (8 wks):</strong> May 9 – June 27</li>
+          <li>Mid-semester break March 1 to 14</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-icon"><i class="fa-solid fa-tag"></i></div>
+        <h4>Tuition</h4>
+        <div class="price-tag">$108 <span class="price-sub">Full Program</span></div>
+        <div class="price-tag-small">$30 <span class="price-sub">Per Unit</span></div>
+        <p style="font-size: 0.9rem; margin-top: 1rem;">Scholarships Available</p>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+   <section class="faculty-section section">
+  <div class="container">
+    
+    <div class="center" style="margin-bottom: 3rem;">
+      <h3>Faculty & Curriculum Overview</h3>
+      <p class="lead">Guided by scholars with deep expertise in metaphysics, cosmology, and consciousness studies.</p>
+    </div>
+
+    <div class="faculty-hybrid-grid">
+
+      <article class="hybrid-card">
+        <div class="hybrid-header-pattern"></div>
+        <img src="img/Tiziano.2.jpg" alt="Dr. Tiziano Valentinuzzi" class="card-author-img">
+        
+        <div class="card-content">
+          <span class="unit-badge">Unit 1: Jan 10 – Jan 31</span>
+          <h3>Vedic Cosmology</h3>
+          <p class="faculty-name-sub">Dr. Tiziano Valentinuzzi</p>
+          <ul>
+            <li><Strong>Crisis of meaning:</Strong> How physicalism fails to satisfy human purpose</li>
+            <li><strong>Consciousness-based universe:</strong> Ātmā-centered worldview vs. neuroscience and panpsychism</li>
+            <li><strong>Simulation hypothesis:Is the Universe a Virtual Reality? </strong> Vedic metaphysics through quantum physics and information theory</li>
+            <li><strong>Divine love scientifically:</strong> Bhakti as rational principle rather than sentiment</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="hybrid-card">
+        <div class="hybrid-header-pattern"></div>
+        <img src="img/Sankar.jpg" alt="Dr. Shivanand Sharma" class="card-author-img">
+        
+        <div class="card-content">
+          <span class="unit-badge">Unit 2: Feb 7 – Feb 28</span>
+          <h3>Philosophy Foundations</h3>
+          <p class="faculty-name-sub">Dr. Shivanand Sharma</p>
+          <ul>
+            <li><strong>Argumentation:</strong> Logical reasoning and debate methodology</li>
+            <li><strong>Philosophy of Mind:</strong> Consciousness and The Architecture of Thought</li>
+            <li><strong>Philosophy of Science: </strong> Scientific methodology and its limitations</li>
+            <li><strong>Philosophy of Religion: </strong> Theological and spiritual epistemology</li>
+          </ul>
+        </div>
+      </article>
+ <article class="hybrid-card">
+        <div class="hybrid-header-pattern"></div>
+        <img src="img/HDG.1.jpg" alt="Dr. Howard Resnick" class="card-author-img">
+        
+        <div class="card-content">
+          <span class="unit-badge">Unit 3:  March 14 – April 4</span>
+          <h3>Foundations of Metaphysics</h3>
+          <p class="faculty-name-sub">Dr. Howard Resnick</p>
+          <ul>
+            <li><strong>Introduction to metaphysics:</strong> arguments against atheism and physicalism</li>
+            <li><strong>Metaphysics in History: </strong>Plato's Krishna conscious principles; Aristotle's parallels to Caitanya's logic; and much more.</li>
+            <li><strong>Case Study of Irrational Materialism: </strong> How 18th-19th century conditions led to false Darwinist claims</li>
+            <li><strong>Physicalism vs. Civilization:</strong> How strict materialism denies moral principles and human values</li>
+          </ul>
+        </div>
+      </article>
+      <article class="hybrid-card">
+        <div class="hybrid-header-pattern"></div>
+        <img src="img/DharmaV.jpg" alt="Dr. Doug Watson" class="card-author-img">
+        
+        <div class="card-content">
+          <span class="unit-badge">Unit 3:April 11 - May 2</span>
+          <h3>Physics and Cosmology</h3>
+          <p class="faculty-name-sub">Dr. Doug Watson</p>
+          <ul>
+            <li><strong>Crisis in Physics:</strong> Modern physics’ conceptual limitations</li>
+            <li><strong>Rethinking Space, Time, and Matter: </strong> Quantum mechanics challenging fixed assumptions</li>
+            <li><strong>Quantum Gravity:</strong> Emerging understandings of reality as a universe of relationships</li>
+            <li><strong>Science and Philosophy:</strong> Relational cosmology integrating consciousness</li>
+          </ul>
+        </div>
+      </article>
+      <article class="hybrid-card">
+        <div class="hybrid-header-pattern highlight-pattern"></div>
+        <img src="img/Akhand1.jpg" alt="Akhandadhi Das" class="card-author-img">
+        
+        <div class="card-content">
+          <span class="unit-badge highlight-badge">Unit 5: May 9 – June 27</span>
+          <p> Total 8 Weeks, 2 weeks per Topic</p>
+          <h3>Consciousness Studies</h3>
+          <p class="faculty-name-sub">Akhandadhi Das</p>
+          <ul>
+            <li><strong>Consciousness:</strong>"The Hard Problem of Consciousness"</li>
+            <li><strong>Reality:</strong> Metaphysical foundations and consciousness–world interaction</li>
+            <li><strong>Life: </strong> Earth’s biological mysteries; scientific support for Purāṇic perspectives</li>
+            <li><strong>Cosmos:</strong> consciousness-based universal structure and realms of free consciousness</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+   
+    <!-- Implementation & Contribution -->
+    <section class="course-section">
+    
+
+      <h4>Certification &amp; Assessment</h4>
+      <p>
+        To support meaningful learning, each Unit concludes with a short reflective or practical assessment.
+        A Unit Certificate is awarded upon completion of each Unit. Students who complete all five Units receive
+        the Final Program Certificate, recognizing successful completion of the full six-month training.
+      </p>
+
+      <h4>Learning Outcomes & Enrollment Options</h4>
+         <p>The learning outcomes include:</p>
+      <ul>
+        <li>Clearer understanding of metaphysics, cosmology, consciousness, and ethics</li>
+        <li>Improved reasoning, articulation, and communication skills</li>
+        <li>Increased confidence engaging in scientific, philosophical, or interfaith conversations</li>
+        <li>Deeper appreciation of the Bhagavata worldview and its contemporary relevance</li>
+      </ul>
+     
+      <h4> A) Full Program Enrollment — $108 </h4>
+     <p> This single program fee provides access to the entire six-month training, including all live Saturday sessions, Canvas modules, assignments, and assessments. Students also receive a Unit Certificate for each completed Unit and a Final Program Certificate upon successful completion of all requirements.
+This option offers the greatest value, supporting a coherent journey that builds progressively from foundational metaphysics to applied consciousness studies. Students may participate synchronously or complete the material asynchronously through Canvas, depending on their schedule and learning needs.
+
+</p>
+      <h4>B) Per-Unit Enrollment — $30 per Unit</h4>
+     <p>For those unable to commit to the full program at this time, individual Units may be taken separately for $30 each. Per-unit participation includes access to the Canvas environment, recordings for the selected Unit, and a Unit Certificate upon completion of its assessment.</p>
+
+   
+    </section>
+
+    <!-- Contact / Footer info -->
+ 
+<div class="button-row">
+
+ 
+      <a class="btn secondary" href="https://square.link/u/e7OtuBOj" class="btn primary" style="background: 
+              var(--bihs-navy); color: #fff;" margin-right:14px;> Enroll in Full Program</a>
+  
+      <a class="btn secondary" href="https://square.link/u/HcOVFxxG" class="btn primary" style="background: 
+              var(--bihs-navy); color: #fff;" margin-right:14px;> Enroll in Individual Unit(s)</a>
+  
+      <a class="btn secondary" href="https://square.link/u/wYPRTdBM" class="btn primary" style="background: 
+              var(--bihs-navy); color: #fff;" margin-right:14px;> Support Student Scholarships</a>
+  
+  <a class="btn secondary" href="https://forms.gle/C4kRXACgfTfXqCER8" class="btn primary" style="background: 
+              var(--bihs-navy); color: #fff;">Request More Info</a>
+  </div>
+</div>
+</section>
+
+
+  </main>
+      <div id="footer"></div>
+
+  <script src="js/site.js"></script>
+</body>
+  
+</html>
