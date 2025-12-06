@@ -1339,147 +1339,51 @@ h1, h2 {
   text-decoration: none;
   margin-top: 1.5rem;
 }
-* ========================================= */
-/* MODERN DROPDOWN NAVIGATION                */
-/* ========================================= */
-
-/* 1. Reset the list style so it looks like a menu, not bullets */
-.nav-menu {
-  list-style: none;
+/* Subnav button */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
   margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 1rem; /* Space between main items */
 }
 
-/* 2. Relative position allows the dropdown to stick to this item */
-.nav-menu > li {
-  position: relative;
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: blue;
 }
 
-/* 3. Style the Main Links */
-.nav-menu > li > a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 0.8rem;
-  display: block;
-  border-radius: 4px;
-  transition: background 0.2s;
-}
-
-.nav-menu > li > a:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-/* 4. THE DROPDOWN MENU (Hidden by default) */
-.dropdown {
-  visibility: hidden; /* Hides it */
-  opacity: 0;         /* Makes it invisible */
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
   position: absolute;
-  top: 100%;          /* Pushes it right below the parent */
   left: 0;
-  background-color: #ffffff;
-  min-width: 200px;   /* Width of the dropdown box */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  border-radius: 4px;
-  padding: 0.5rem 0;
-  list-style: none;
-  z-index: 1000;      /* Ensures it sits on top of everything */
-  transform: translateY(10px); /* Starts slightly lower for animation */
-  transition: all 0.3s ease;
+  background-color: blue;
+  width: 100%;
+  z-index: 1;
 }
 
-/* 5. THE TRIGGER (Show on Hover) */
-.has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0); /* Floats up into place */
-}
-
-/* 6. Dropdown Links Styling */
-.dropdown li a {
-  color: #003366; /* Navy Text */
-  padding: 0.8rem 1.2rem;
-  display: block;
-  font-size: 0.95rem;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.dropdown li a:hover {
-  background-color: #f8fbff; /* Light Blue hover */
-  color: #eebb4d; /* Gold hover */
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
   text-decoration: none;
 }
 
-/* Remove bottom border from last item */
-.dropdown li:last-child a {
-  border-bottom: none;
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #fff;
+  color: black;
 }
 
-/* Small arrow icon spacing */
-.fa-caret-down {
-  margin-left: 5px;
-  font-size: 0.8rem;
-}
-
-/* Highlight the Donation Button separately */
-.btn-donate {
-  background: #eebb4d;
-  color: #003366 !important; /* Force navy text */
-  padding: 0.5rem 1.2rem !important;
-  font-weight: bold;
-}
-/* ========================================= */
-/* MOBILE MENU ADJUSTMENTS                   */
-/* ========================================= */
-
-@media (max-width: 900px) {
-  /* 1. Stack the menu items vertically */
-  .nav-menu {
-    flex-direction: column;
-    align-items: flex-start; /* Align to the left */
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  /* 2. Make links stretch full width */
-  .nav-menu > li {
-    width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,0.1); /* Divider line */
-  }
-
-  /* 3. Handle the Dropdown on Mobile */
-  .dropdown {
-    position: static; /* Don't float on top; push content down */
-    box-shadow: none; /* Remove shadow */
-    background-color: rgba(0,0,0,0.2); /* Slightly darker background */
-    width: 100%;
-    padding-left: 20px; /* Indent the sub-links */
-    
-    /* Keep hidden until tapped */
-    display: none; 
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-  }
-
-  /* 4. Show the dropdown when tapped (Mobile treats hover as tap) */
-  .has-dropdown:hover .dropdown, 
-  .has-dropdown:focus-within .dropdown {
-    display: block;
-  }
-  
-  /* 5. Fix text color for mobile sub-links */
-  .dropdown li a {
-    color: #ffffff; /* White text */
-    border-bottom: none;
-  }
-  
-  .dropdown li a:hover {
-    background: transparent;
-    color: #eebb4d;
-  }
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
 }
