@@ -814,7 +814,7 @@ h1, h2 {
 .hero-content h1 {
   font-family: Georgia, "Times New Roman", serif; 
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #eebb4d; /* Gold */
+  color: #ffffff; /* white */
   margin-bottom: 0.5rem;
 }
 
