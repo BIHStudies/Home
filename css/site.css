@@ -1330,57 +1330,64 @@ h1, h2 {
 
 
 /* ========================================= */
-/* NEW DROPDOWN LOGIC (Add to bottom)        */
+/* ===== Partners section ===== */
 /* ========================================= */
-
-/* 1. The Container: Sits in line with other links */
-.dropdown {
-  display: inline-block;
-  position: relative; /* Holds the menu in place */
+.summary-block {
+  padding: 3rem 0;
+  background: var(--bihs-sky); /* light blue background */
 }
 
-/* 2. The Trigger: Makes the "Research" text look like your other links */
-.dropdown .dropbtn {
-  color: white;
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.partner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 14px 16px; /* Matches your nav padding */
+
+  padding: 1.25rem 1.25rem;
+  min-height: 86px;
+
+  background: #fff;
+  border: 1px solid rgba(2, 38, 73, 0.18);
+  border-radius: 14px;
+
+  box-shadow: 0 6px 18px rgba(2, 38, 73, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(2, 38, 73, 0.12);
+  border-color: rgba(2, 38, 73, 0.28);
   text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
 }
 
-/* 3. The Hidden Menu: Starts hidden */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #1eebd6; /* Your Teal Color */
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1000;
-  top: 100%; /* Pushes it exactly below the nav bar */
-  left: 0;
+.partner-card:focus-visible {
+  outline: 3px solid rgba(199, 154, 43, 0.55); /* BIHS gold glow */
+  outline-offset: 3px;
 }
 
-/* 4. Links inside the menu */
-.dropdown-content a {
-  color: black !important; /* Force black text on teal background */
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.partner-card strong {
+  font-size: 1.05rem;
+  color: var(--bihs-navy-900);
+  line-height: 1.25;
+  letter-spacing: 0.2px;
 }
 
-/* 5. Hover Effects */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+/* Optional: make very long names wrap nicely */
+.partner-card strong {
+  max-width: 34ch;
 }
 
-/* Show menu when hovering the container */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Match the Blue Hover of your main nav */
-.dropdown:hover .dropbtn {
-  background-color: blue;
-}
