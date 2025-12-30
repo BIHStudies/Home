@@ -64,23 +64,28 @@
       align-items:center;
       justify-content:center;
       text-align:center;
-      gap:12px;
-      padding:16px;
+      gap:10px;
+      padding:16px 18px;
       border-radius:var(--radius);
+      
       background: var(--bihs-navy-900);
-      color: #fff !important;
+      color: #ffffff !important;
+      
       font-weight:700;
       font-size:18px;
       text-decoration:none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition:.2s ease;
-      cursor:pointer;
-      border: 1px solid rgba(255,255,255,0.18);
+      
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+
+      transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+      cursor: pointer;
     }
     .opt:hover, button.opt:hover {
-      filter: brightness(1.05);
-      transform:translateY(-1px);
-    }
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
+}
     .opt img{height:22px;width:auto;opacity:.9}
 
     .panel{display:none;margin-top:20px}
