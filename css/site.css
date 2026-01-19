@@ -1396,4 +1396,9 @@ h1, h2 {
 #Guidelines {
   scroll-margin-top: 160px;
 }
-
+/* Mobile header is often taller (menu wraps / different padding) */
+@media (max-width: 768px) {
+  #Guidelines {
+    scroll-margin-top: 220px; /* phone */
+  }
+}
