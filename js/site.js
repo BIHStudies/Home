@@ -1,3 +1,32 @@
+// NEW: Fix anchor jump only for #Guidelines (Library page)
+function fixGuidelinesAnchorAfterHeaderLoads() {
+  // Run only if the URL hash is exactly #Guidelines
+  if (location.hash !== "#Guidelines") return;
+
+  const target = document.getElementById("Guidelines");
+  if (!target) return;
+
+  // Find the injected header via the site navigation
+  const headerNav = document.querySelector(".site-nav");
+  if (!headerNav) return;
+
+  const headerEl = headerNav.closest("header") || headerNav.parentElement;
+  if (!headerEl) return;
+
+  const headerHeight = Math.ceil(headerEl.getBoundingClientRect().height);
+
+  // Small buffer so the title is clearly visible
+  const buffer = 12;
+
+  const top =
+    target.getBoundingClientRect().top +
+    window.pageYOffset -
+    headerHeight -
+    buffer;
+
+  window.scrollTo({ top, left: 0, behavior: "auto" });
+}
+
 async function loadPart(targetId, file) {
   try {
     const res = await fetch(file, { cache: "no-store" });
