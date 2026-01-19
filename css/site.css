@@ -1392,3 +1392,7 @@ h1, h2 {
 }
 
 .list-anchor { height: 1px; }
+
+#Guidelines {
+  scroll-margin-top: 120px;
+}
