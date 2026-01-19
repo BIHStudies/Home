@@ -1402,3 +1402,5 @@ h1, h2 {
     scroll-margin-top: 220px; /* phone */
   }
 }
+:root { --header-offset: 0px; }
+html { scroll-padding-top: var(--header-offset); }
