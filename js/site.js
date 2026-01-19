@@ -16,15 +16,19 @@ function fixGuidelinesAnchorAfterHeaderLoads() {
   const headerHeight = Math.ceil(headerEl.getBoundingClientRect().height);
 
   // Small buffer so the title is clearly visible
-  const buffer = 12;
+const buffer = 12;
 
-  const top =
-    target.getBoundingClientRect().top +
-    window.pageYOffset -
-    headerHeight -
-    buffer;
+const top =
+  target.getBoundingClientRect().top +
+  window.pageYOffset -
+  headerHeight -
+  buffer;
 
-  window.scrollTo({ top, left: 0, behavior: "auto" });
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+    window.scrollTo({ top, left: 0, behavior: "auto" });
+  });
+});
 }
 
 async function loadPart(targetId, file) {
