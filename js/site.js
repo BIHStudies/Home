@@ -41,6 +41,7 @@ async function loadPart(targetId, file) {
         const href = a.getAttribute("href");
         if (href === here) a.classList.add("active");
       });
+      fixGuidelinesAnchorAfterHeaderLoads(); // NEW
     }
   } catch (e) {
     console.error("Include failed for", file, e);
