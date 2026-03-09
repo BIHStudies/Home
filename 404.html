@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting to New Site...</title>
+    <script>
+      // 1. Get the current broken path (e.g., /Home/donations.html)
+      var oldPath = window.location.pathname;
+
+      // 2. Remove the "/Home" part if it exists
+      var newPath = oldPath.replace(/^\/Home/, "");
+
+      // 3. Construct the new URL on your .org domain
+      var destination = "https://bihstudies.org" + newPath;
+
+      // 4. Redirect the user instantly
+      window.location.replace(destination);
+    </script>
+  </head>
+  <body>
+    <p>We have moved! You are being redirected to <a id="link" href="https://bihstudies.org">bihstudies.org</a></p>
+    <script>
+      // Fallback: update the text link just in case JS is slow
+      document.getElementById('link').href = "https://bihstudies.org" + window.location.pathname.replace(/^\/Home/, "");
+    </script>
+  </body>
+</html>
